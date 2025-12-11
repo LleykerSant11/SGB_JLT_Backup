@@ -22,145 +22,83 @@ Partial Class frm_bibliotecario
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim CODBIBLILabel As System.Windows.Forms.Label
+        Dim NombreApellidosLabel As System.Windows.Forms.Label
+        Dim TelefonoLabel As System.Windows.Forms.Label
+        Dim DireccionLabel As System.Windows.Forms.Label
+        Dim ClaveLabel As System.Windows.Forms.Label
+        Dim CorreoLabel As System.Windows.Forms.Label
+        Dim EstadoLabel As System.Windows.Forms.Label
+        Dim UsuarioLabel As System.Windows.Forms.Label
         Me.pn_container = New System.Windows.Forms.Panel()
-        Me.textBox3 = New System.Windows.Forms.TextBox()
-        Me.textBox4 = New System.Windows.Forms.TextBox()
-        Me.textBox5 = New System.Windows.Forms.TextBox()
-        Me.textBox6 = New System.Windows.Forms.TextBox()
-        Me.label7 = New System.Windows.Forms.Label()
-        Me.label9 = New System.Windows.Forms.Label()
-        Me.label2 = New System.Windows.Forms.Label()
-        Me.label8 = New System.Windows.Forms.Label()
-        Me.textBox1 = New System.Windows.Forms.TextBox()
-        Me.label3 = New System.Windows.Forms.Label()
-        Me.label4 = New System.Windows.Forms.Label()
         Me.lb_detusuario = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.txt_buscat = New System.Windows.Forms.TextBox()
+        Me.btn_descargarexcel = New FontAwesome.Sharp.IconButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
-        Me.btn_descargarexcel = New FontAwesome.Sharp.IconButton()
-        Me.btn_limpiar = New FontAwesome.Sharp.IconButton()
-        Me.btn_eliminar = New FontAwesome.Sharp.IconButton()
-        Me.btn_guardar = New FontAwesome.Sharp.IconButton()
+        Me.btn_guardarB = New FontAwesome.Sharp.IconButton()
+        Me.btn_nuevoB = New FontAwesome.Sharp.IconButton()
+        Me.btn_actualizarB = New FontAwesome.Sharp.IconButton()
+        Me.btn_eliminarB = New FontAwesome.Sharp.IconButton()
+        Me.btn_modificarB = New FontAwesome.Sharp.IconButton()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.CODBIBLITextBox = New System.Windows.Forms.TextBox()
+        Me.NombreApellidosTextBox = New System.Windows.Forms.TextBox()
+        Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
+        Me.DireccionTextBox = New System.Windows.Forms.TextBox()
+        Me.ClaveTextBox = New System.Windows.Forms.TextBox()
+        Me.CorreoTextBox = New System.Windows.Forms.TextBox()
+        Me.EstadoTextBox = New System.Windows.Forms.TextBox()
+        Me.UsuarioTextBox = New System.Windows.Forms.TextBox()
+        Me.BIBLIOTECARIODataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.BIBLIOTECARIOBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BD_BIBLIOTECA_V2DataSet = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSet()
+        Me.BIBLIOTECARIOTableAdapter = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.BIBLIOTECARIOTableAdapter()
+        Me.TableAdapterManager = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager()
+        CODBIBLILabel = New System.Windows.Forms.Label()
+        NombreApellidosLabel = New System.Windows.Forms.Label()
+        TelefonoLabel = New System.Windows.Forms.Label()
+        DireccionLabel = New System.Windows.Forms.Label()
+        ClaveLabel = New System.Windows.Forms.Label()
+        CorreoLabel = New System.Windows.Forms.Label()
+        EstadoLabel = New System.Windows.Forms.Label()
+        UsuarioLabel = New System.Windows.Forms.Label()
         Me.pn_container.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.BIBLIOTECARIODataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BIBLIOTECARIOBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pn_container
         '
         Me.pn_container.BackColor = System.Drawing.Color.White
-        Me.pn_container.Controls.Add(Me.btn_limpiar)
-        Me.pn_container.Controls.Add(Me.btn_eliminar)
-        Me.pn_container.Controls.Add(Me.btn_guardar)
-        Me.pn_container.Controls.Add(Me.textBox3)
-        Me.pn_container.Controls.Add(Me.textBox4)
-        Me.pn_container.Controls.Add(Me.textBox5)
-        Me.pn_container.Controls.Add(Me.textBox6)
-        Me.pn_container.Controls.Add(Me.label7)
-        Me.pn_container.Controls.Add(Me.label9)
-        Me.pn_container.Controls.Add(Me.label2)
-        Me.pn_container.Controls.Add(Me.label8)
-        Me.pn_container.Controls.Add(Me.textBox1)
-        Me.pn_container.Controls.Add(Me.label3)
-        Me.pn_container.Controls.Add(Me.label4)
+        Me.pn_container.Controls.Add(Me.GroupBox1)
+        Me.pn_container.Controls.Add(Me.btn_guardarB)
+        Me.pn_container.Controls.Add(Me.btn_nuevoB)
+        Me.pn_container.Controls.Add(Me.btn_actualizarB)
+        Me.pn_container.Controls.Add(Me.btn_eliminarB)
+        Me.pn_container.Controls.Add(Me.btn_modificarB)
         Me.pn_container.Controls.Add(Me.lb_detusuario)
         Me.pn_container.Dock = System.Windows.Forms.DockStyle.Left
         Me.pn_container.Location = New System.Drawing.Point(0, 0)
         Me.pn_container.Name = "pn_container"
-        Me.pn_container.Size = New System.Drawing.Size(216, 561)
+        Me.pn_container.Size = New System.Drawing.Size(252, 561)
         Me.pn_container.TabIndex = 7
-        '
-        'textBox3
-        '
-        Me.textBox3.Location = New System.Drawing.Point(28, 228)
-        Me.textBox3.Name = "textBox3"
-        Me.textBox3.Size = New System.Drawing.Size(163, 20)
-        Me.textBox3.TabIndex = 12
-        '
-        'textBox4
-        '
-        Me.textBox4.Location = New System.Drawing.Point(28, 189)
-        Me.textBox4.Name = "textBox4"
-        Me.textBox4.Size = New System.Drawing.Size(163, 20)
-        Me.textBox4.TabIndex = 13
-        '
-        'textBox5
-        '
-        Me.textBox5.Location = New System.Drawing.Point(28, 150)
-        Me.textBox5.Name = "textBox5"
-        Me.textBox5.Size = New System.Drawing.Size(163, 20)
-        Me.textBox5.TabIndex = 14
-        '
-        'textBox6
-        '
-        Me.textBox6.Location = New System.Drawing.Point(28, 111)
-        Me.textBox6.Name = "textBox6"
-        Me.textBox6.Size = New System.Drawing.Size(163, 20)
-        Me.textBox6.TabIndex = 15
-        '
-        'label7
-        '
-        Me.label7.AutoSize = True
-        Me.label7.Location = New System.Drawing.Point(25, 251)
-        Me.label7.Name = "label7"
-        Me.label7.Size = New System.Drawing.Size(0, 13)
-        Me.label7.TabIndex = 14
-        '
-        'label9
-        '
-        Me.label9.AutoSize = True
-        Me.label9.Location = New System.Drawing.Point(25, 212)
-        Me.label9.Name = "label9"
-        Me.label9.Size = New System.Drawing.Size(111, 13)
-        Me.label9.TabIndex = 16
-        Me.label9.Text = "Confirmar Contraseña:"
-        '
-        'label2
-        '
-        Me.label2.AutoSize = True
-        Me.label2.Location = New System.Drawing.Point(25, 56)
-        Me.label2.Name = "label2"
-        Me.label2.Size = New System.Drawing.Size(85, 13)
-        Me.label2.TabIndex = 10
-        Me.label2.Text = "Nro Documento:"
-        '
-        'label8
-        '
-        Me.label8.AutoSize = True
-        Me.label8.Location = New System.Drawing.Point(24, 173)
-        Me.label8.Name = "label8"
-        Me.label8.Size = New System.Drawing.Size(64, 13)
-        Me.label8.TabIndex = 15
-        Me.label8.Text = "Contraseña:"
-        '
-        'textBox1
-        '
-        Me.textBox1.Location = New System.Drawing.Point(27, 72)
-        Me.textBox1.Name = "textBox1"
-        Me.textBox1.Size = New System.Drawing.Size(164, 20)
-        Me.textBox1.TabIndex = 10
-        '
-        'label3
-        '
-        Me.label3.AutoSize = True
-        Me.label3.Location = New System.Drawing.Point(25, 134)
-        Me.label3.Name = "label3"
-        Me.label3.Size = New System.Drawing.Size(41, 13)
-        Me.label3.TabIndex = 11
-        Me.label3.Text = "Correo:"
-        '
-        'label4
-        '
-        Me.label4.AutoSize = True
-        Me.label4.Location = New System.Drawing.Point(25, 95)
-        Me.label4.Name = "label4"
-        Me.label4.Size = New System.Drawing.Size(94, 13)
-        Me.label4.TabIndex = 12
-        Me.label4.Text = "Nombre Completo:"
         '
         'lb_detusuario
         '
@@ -182,10 +120,22 @@ Partial Class frm_bibliotecario
         Me.Panel1.Controls.Add(Me.btn_descargarexcel)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Location = New System.Drawing.Point(229, 9)
+        Me.Panel1.Location = New System.Drawing.Point(287, 9)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(843, 66)
+        Me.Panel1.Size = New System.Drawing.Size(785, 66)
         Me.Panel1.TabIndex = 19
+        '
+        'IconButton2
+        '
+        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Broom
+        Me.IconButton2.IconColor = System.Drawing.Color.Black
+        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton2.IconSize = 20
+        Me.IconButton2.Location = New System.Drawing.Point(763, 23)
+        Me.IconButton2.Name = "IconButton2"
+        Me.IconButton2.Size = New System.Drawing.Size(29, 23)
+        Me.IconButton2.TabIndex = 17
+        Me.IconButton2.UseVisualStyleBackColor = True
         '
         'ComboBox1
         '
@@ -195,12 +145,39 @@ Partial Class frm_bibliotecario
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 14
         '
+        'IconButton1
+        '
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Search
+        Me.IconButton1.IconColor = System.Drawing.Color.Black
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.IconSize = 20
+        Me.IconButton1.Location = New System.Drawing.Point(728, 23)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Size = New System.Drawing.Size(29, 23)
+        Me.IconButton1.TabIndex = 16
+        Me.IconButton1.UseVisualStyleBackColor = True
+        '
         'txt_buscat
         '
         Me.txt_buscat.Location = New System.Drawing.Point(434, 23)
         Me.txt_buscat.Name = "txt_buscat"
         Me.txt_buscat.Size = New System.Drawing.Size(288, 20)
         Me.txt_buscat.TabIndex = 14
+        '
+        'btn_descargarexcel
+        '
+        Me.btn_descargarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel
+        Me.btn_descargarexcel.IconColor = System.Drawing.Color.Green
+        Me.btn_descargarexcel.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_descargarexcel.IconSize = 20
+        Me.btn_descargarexcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_descargarexcel.Location = New System.Drawing.Point(7, 26)
+        Me.btn_descargarexcel.Name = "btn_descargarexcel"
+        Me.btn_descargarexcel.Size = New System.Drawing.Size(130, 28)
+        Me.btn_descargarexcel.TabIndex = 14
+        Me.btn_descargarexcel.Text = "Descargar Excel"
+        Me.btn_descargarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_descargarexcel.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -221,102 +198,354 @@ Partial Class frm_bibliotecario
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "Listado de Bibliotecario:"
         '
-        'IconButton2
+        'btn_guardarB
         '
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Broom
-        Me.IconButton2.IconColor = System.Drawing.Color.Black
-        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton2.IconSize = 20
-        Me.IconButton2.Location = New System.Drawing.Point(763, 23)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Size = New System.Drawing.Size(29, 23)
-        Me.IconButton2.TabIndex = 17
-        Me.IconButton2.UseVisualStyleBackColor = True
+        Me.btn_guardarB.BackColor = System.Drawing.Color.DarkGreen
+        Me.btn_guardarB.Enabled = False
+        Me.btn_guardarB.ForeColor = System.Drawing.Color.White
+        Me.btn_guardarB.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
+        Me.btn_guardarB.IconColor = System.Drawing.Color.White
+        Me.btn_guardarB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_guardarB.IconSize = 25
+        Me.btn_guardarB.Location = New System.Drawing.Point(42, 390)
+        Me.btn_guardarB.Name = "btn_guardarB"
+        Me.btn_guardarB.Size = New System.Drawing.Size(163, 35)
+        Me.btn_guardarB.TabIndex = 38
+        Me.btn_guardarB.Text = "Guardar"
+        Me.btn_guardarB.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_guardarB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_guardarB.UseVisualStyleBackColor = False
         '
-        'IconButton1
+        'btn_nuevoB
         '
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Search
-        Me.IconButton1.IconColor = System.Drawing.Color.Black
-        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.IconSize = 20
-        Me.IconButton1.Location = New System.Drawing.Point(728, 23)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(29, 23)
-        Me.IconButton1.TabIndex = 16
-        Me.IconButton1.UseVisualStyleBackColor = True
+        Me.btn_nuevoB.BackColor = System.Drawing.Color.Teal
+        Me.btn_nuevoB.ForeColor = System.Drawing.Color.White
+        Me.btn_nuevoB.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
+        Me.btn_nuevoB.IconColor = System.Drawing.Color.White
+        Me.btn_nuevoB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_nuevoB.IconSize = 25
+        Me.btn_nuevoB.Location = New System.Drawing.Point(41, 352)
+        Me.btn_nuevoB.Name = "btn_nuevoB"
+        Me.btn_nuevoB.Size = New System.Drawing.Size(163, 35)
+        Me.btn_nuevoB.TabIndex = 37
+        Me.btn_nuevoB.Text = "Nuevo"
+        Me.btn_nuevoB.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_nuevoB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_nuevoB.UseVisualStyleBackColor = False
         '
-        'btn_descargarexcel
+        'btn_actualizarB
         '
-        Me.btn_descargarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel
-        Me.btn_descargarexcel.IconColor = System.Drawing.Color.Green
-        Me.btn_descargarexcel.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_descargarexcel.IconSize = 20
-        Me.btn_descargarexcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_descargarexcel.Location = New System.Drawing.Point(7, 26)
-        Me.btn_descargarexcel.Name = "btn_descargarexcel"
-        Me.btn_descargarexcel.Size = New System.Drawing.Size(130, 28)
-        Me.btn_descargarexcel.TabIndex = 14
-        Me.btn_descargarexcel.Text = "Descargar Excel"
-        Me.btn_descargarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_descargarexcel.UseVisualStyleBackColor = True
+        Me.btn_actualizarB.BackColor = System.Drawing.Color.SteelBlue
+        Me.btn_actualizarB.Enabled = False
+        Me.btn_actualizarB.ForeColor = System.Drawing.Color.White
+        Me.btn_actualizarB.IconChar = FontAwesome.Sharp.IconChar.Broom
+        Me.btn_actualizarB.IconColor = System.Drawing.Color.White
+        Me.btn_actualizarB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_actualizarB.IconSize = 25
+        Me.btn_actualizarB.Location = New System.Drawing.Point(42, 472)
+        Me.btn_actualizarB.Name = "btn_actualizarB"
+        Me.btn_actualizarB.Size = New System.Drawing.Size(163, 35)
+        Me.btn_actualizarB.TabIndex = 36
+        Me.btn_actualizarB.Text = "Actualizar"
+        Me.btn_actualizarB.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_actualizarB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_actualizarB.UseVisualStyleBackColor = False
         '
-        'btn_limpiar
+        'btn_eliminarB
         '
-        Me.btn_limpiar.BackColor = System.Drawing.Color.SteelBlue
-        Me.btn_limpiar.ForeColor = System.Drawing.Color.White
-        Me.btn_limpiar.IconChar = FontAwesome.Sharp.IconChar.Broom
-        Me.btn_limpiar.IconColor = System.Drawing.Color.White
-        Me.btn_limpiar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_limpiar.IconSize = 25
-        Me.btn_limpiar.Location = New System.Drawing.Point(28, 371)
-        Me.btn_limpiar.Name = "btn_limpiar"
-        Me.btn_limpiar.Size = New System.Drawing.Size(163, 35)
-        Me.btn_limpiar.TabIndex = 26
-        Me.btn_limpiar.Text = "Limpiar"
-        Me.btn_limpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_limpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_limpiar.UseVisualStyleBackColor = False
+        Me.btn_eliminarB.BackColor = System.Drawing.Color.Red
+        Me.btn_eliminarB.ForeColor = System.Drawing.Color.White
+        Me.btn_eliminarB.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
+        Me.btn_eliminarB.IconColor = System.Drawing.Color.White
+        Me.btn_eliminarB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_eliminarB.IconSize = 25
+        Me.btn_eliminarB.Location = New System.Drawing.Point(41, 513)
+        Me.btn_eliminarB.Name = "btn_eliminarB"
+        Me.btn_eliminarB.Size = New System.Drawing.Size(163, 35)
+        Me.btn_eliminarB.TabIndex = 35
+        Me.btn_eliminarB.Text = "eliminar"
+        Me.btn_eliminarB.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_eliminarB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_eliminarB.UseVisualStyleBackColor = False
         '
-        'btn_eliminar
+        'btn_modificarB
         '
-        Me.btn_eliminar.BackColor = System.Drawing.Color.Red
-        Me.btn_eliminar.ForeColor = System.Drawing.Color.White
-        Me.btn_eliminar.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
-        Me.btn_eliminar.IconColor = System.Drawing.Color.White
-        Me.btn_eliminar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_eliminar.IconSize = 25
-        Me.btn_eliminar.Location = New System.Drawing.Point(27, 412)
-        Me.btn_eliminar.Name = "btn_eliminar"
-        Me.btn_eliminar.Size = New System.Drawing.Size(163, 35)
-        Me.btn_eliminar.TabIndex = 25
-        Me.btn_eliminar.Text = "eliminar"
-        Me.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_eliminar.UseVisualStyleBackColor = False
+        Me.btn_modificarB.BackColor = System.Drawing.Color.DarkGreen
+        Me.btn_modificarB.ForeColor = System.Drawing.Color.White
+        Me.btn_modificarB.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
+        Me.btn_modificarB.IconColor = System.Drawing.Color.White
+        Me.btn_modificarB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_modificarB.IconSize = 25
+        Me.btn_modificarB.Location = New System.Drawing.Point(41, 431)
+        Me.btn_modificarB.Name = "btn_modificarB"
+        Me.btn_modificarB.Size = New System.Drawing.Size(163, 35)
+        Me.btn_modificarB.TabIndex = 34
+        Me.btn_modificarB.Text = "Modificar"
+        Me.btn_modificarB.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_modificarB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_modificarB.UseVisualStyleBackColor = False
         '
-        'btn_guardar
+        'GroupBox1
         '
-        Me.btn_guardar.BackColor = System.Drawing.Color.DarkGreen
-        Me.btn_guardar.ForeColor = System.Drawing.Color.White
-        Me.btn_guardar.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
-        Me.btn_guardar.IconColor = System.Drawing.Color.White
-        Me.btn_guardar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_guardar.IconSize = 25
-        Me.btn_guardar.Location = New System.Drawing.Point(27, 330)
-        Me.btn_guardar.Name = "btn_guardar"
-        Me.btn_guardar.Size = New System.Drawing.Size(163, 35)
-        Me.btn_guardar.TabIndex = 24
-        Me.btn_guardar.Text = "Guardar"
-        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_guardar.UseVisualStyleBackColor = False
+        Me.GroupBox1.Controls.Add(CODBIBLILabel)
+        Me.GroupBox1.Controls.Add(Me.CODBIBLITextBox)
+        Me.GroupBox1.Controls.Add(NombreApellidosLabel)
+        Me.GroupBox1.Controls.Add(Me.NombreApellidosTextBox)
+        Me.GroupBox1.Controls.Add(TelefonoLabel)
+        Me.GroupBox1.Controls.Add(Me.TelefonoTextBox)
+        Me.GroupBox1.Controls.Add(DireccionLabel)
+        Me.GroupBox1.Controls.Add(Me.DireccionTextBox)
+        Me.GroupBox1.Controls.Add(ClaveLabel)
+        Me.GroupBox1.Controls.Add(Me.ClaveTextBox)
+        Me.GroupBox1.Controls.Add(CorreoLabel)
+        Me.GroupBox1.Controls.Add(Me.CorreoTextBox)
+        Me.GroupBox1.Controls.Add(EstadoLabel)
+        Me.GroupBox1.Controls.Add(Me.EstadoTextBox)
+        Me.GroupBox1.Controls.Add(UsuarioLabel)
+        Me.GroupBox1.Controls.Add(Me.UsuarioTextBox)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 35)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(241, 304)
+        Me.GroupBox1.TabIndex = 41
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Datos:"
+        '
+        'CODBIBLILabel
+        '
+        CODBIBLILabel.AutoSize = True
+        CODBIBLILabel.Location = New System.Drawing.Point(22, 50)
+        CODBIBLILabel.Name = "CODBIBLILabel"
+        CODBIBLILabel.Size = New System.Drawing.Size(59, 13)
+        CODBIBLILabel.TabIndex = 0
+        CODBIBLILabel.Text = "CODBIBLI:"
+        '
+        'CODBIBLITextBox
+        '
+        Me.CODBIBLITextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BIBLIOTECARIOBindingSource, "CODBIBLI", True))
+        Me.CODBIBLITextBox.Enabled = False
+        Me.CODBIBLITextBox.Location = New System.Drawing.Point(120, 47)
+        Me.CODBIBLITextBox.Name = "CODBIBLITextBox"
+        Me.CODBIBLITextBox.Size = New System.Drawing.Size(100, 20)
+        Me.CODBIBLITextBox.TabIndex = 1
+        '
+        'NombreApellidosLabel
+        '
+        NombreApellidosLabel.AutoSize = True
+        NombreApellidosLabel.Location = New System.Drawing.Point(22, 76)
+        NombreApellidosLabel.Name = "NombreApellidosLabel"
+        NombreApellidosLabel.Size = New System.Drawing.Size(92, 13)
+        NombreApellidosLabel.TabIndex = 2
+        NombreApellidosLabel.Text = "Nombre Apellidos:"
+        '
+        'NombreApellidosTextBox
+        '
+        Me.NombreApellidosTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BIBLIOTECARIOBindingSource, "NombreApellidos", True))
+        Me.NombreApellidosTextBox.Enabled = False
+        Me.NombreApellidosTextBox.Location = New System.Drawing.Point(120, 73)
+        Me.NombreApellidosTextBox.Name = "NombreApellidosTextBox"
+        Me.NombreApellidosTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.NombreApellidosTextBox.TabIndex = 3
+        '
+        'TelefonoLabel
+        '
+        TelefonoLabel.AutoSize = True
+        TelefonoLabel.Location = New System.Drawing.Point(22, 102)
+        TelefonoLabel.Name = "TelefonoLabel"
+        TelefonoLabel.Size = New System.Drawing.Size(52, 13)
+        TelefonoLabel.TabIndex = 4
+        TelefonoLabel.Text = "Telefono:"
+        '
+        'TelefonoTextBox
+        '
+        Me.TelefonoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BIBLIOTECARIOBindingSource, "Telefono", True))
+        Me.TelefonoTextBox.Enabled = False
+        Me.TelefonoTextBox.Location = New System.Drawing.Point(120, 99)
+        Me.TelefonoTextBox.Name = "TelefonoTextBox"
+        Me.TelefonoTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.TelefonoTextBox.TabIndex = 5
+        '
+        'DireccionLabel
+        '
+        DireccionLabel.AutoSize = True
+        DireccionLabel.Location = New System.Drawing.Point(22, 128)
+        DireccionLabel.Name = "DireccionLabel"
+        DireccionLabel.Size = New System.Drawing.Size(55, 13)
+        DireccionLabel.TabIndex = 6
+        DireccionLabel.Text = "Direccion:"
+        '
+        'DireccionTextBox
+        '
+        Me.DireccionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BIBLIOTECARIOBindingSource, "Direccion", True))
+        Me.DireccionTextBox.Enabled = False
+        Me.DireccionTextBox.Location = New System.Drawing.Point(120, 125)
+        Me.DireccionTextBox.Name = "DireccionTextBox"
+        Me.DireccionTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.DireccionTextBox.TabIndex = 7
+        '
+        'ClaveLabel
+        '
+        ClaveLabel.AutoSize = True
+        ClaveLabel.Location = New System.Drawing.Point(22, 154)
+        ClaveLabel.Name = "ClaveLabel"
+        ClaveLabel.Size = New System.Drawing.Size(37, 13)
+        ClaveLabel.TabIndex = 8
+        ClaveLabel.Text = "Clave:"
+        '
+        'ClaveTextBox
+        '
+        Me.ClaveTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BIBLIOTECARIOBindingSource, "Clave", True))
+        Me.ClaveTextBox.Enabled = False
+        Me.ClaveTextBox.Location = New System.Drawing.Point(120, 151)
+        Me.ClaveTextBox.Name = "ClaveTextBox"
+        Me.ClaveTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.ClaveTextBox.TabIndex = 9
+        '
+        'CorreoLabel
+        '
+        CorreoLabel.AutoSize = True
+        CorreoLabel.Location = New System.Drawing.Point(22, 180)
+        CorreoLabel.Name = "CorreoLabel"
+        CorreoLabel.Size = New System.Drawing.Size(41, 13)
+        CorreoLabel.TabIndex = 10
+        CorreoLabel.Text = "Correo:"
+        '
+        'CorreoTextBox
+        '
+        Me.CorreoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BIBLIOTECARIOBindingSource, "Correo", True))
+        Me.CorreoTextBox.Enabled = False
+        Me.CorreoTextBox.Location = New System.Drawing.Point(120, 177)
+        Me.CorreoTextBox.Name = "CorreoTextBox"
+        Me.CorreoTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.CorreoTextBox.TabIndex = 11
+        '
+        'EstadoLabel
+        '
+        EstadoLabel.AutoSize = True
+        EstadoLabel.Location = New System.Drawing.Point(22, 206)
+        EstadoLabel.Name = "EstadoLabel"
+        EstadoLabel.Size = New System.Drawing.Size(43, 13)
+        EstadoLabel.TabIndex = 12
+        EstadoLabel.Text = "Estado:"
+        '
+        'EstadoTextBox
+        '
+        Me.EstadoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BIBLIOTECARIOBindingSource, "Estado", True))
+        Me.EstadoTextBox.Enabled = False
+        Me.EstadoTextBox.Location = New System.Drawing.Point(120, 203)
+        Me.EstadoTextBox.Name = "EstadoTextBox"
+        Me.EstadoTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.EstadoTextBox.TabIndex = 13
+        '
+        'UsuarioLabel
+        '
+        UsuarioLabel.AutoSize = True
+        UsuarioLabel.Location = New System.Drawing.Point(22, 232)
+        UsuarioLabel.Name = "UsuarioLabel"
+        UsuarioLabel.Size = New System.Drawing.Size(46, 13)
+        UsuarioLabel.TabIndex = 14
+        UsuarioLabel.Text = "Usuario:"
+        '
+        'UsuarioTextBox
+        '
+        Me.UsuarioTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BIBLIOTECARIOBindingSource, "Usuario", True))
+        Me.UsuarioTextBox.Enabled = False
+        Me.UsuarioTextBox.Location = New System.Drawing.Point(120, 229)
+        Me.UsuarioTextBox.Name = "UsuarioTextBox"
+        Me.UsuarioTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.UsuarioTextBox.TabIndex = 15
+        '
+        'BIBLIOTECARIODataGridView
+        '
+        Me.BIBLIOTECARIODataGridView.AutoGenerateColumns = False
+        Me.BIBLIOTECARIODataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.BIBLIOTECARIODataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
+        Me.BIBLIOTECARIODataGridView.DataSource = Me.BIBLIOTECARIOBindingSource
+        Me.BIBLIOTECARIODataGridView.Location = New System.Drawing.Point(258, 108)
+        Me.BIBLIOTECARIODataGridView.Name = "BIBLIOTECARIODataGridView"
+        Me.BIBLIOTECARIODataGridView.Size = New System.Drawing.Size(821, 220)
+        Me.BIBLIOTECARIODataGridView.TabIndex = 19
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "CODBIBLI"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "CODBIBLI"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NombreApellidos"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "NombreApellidos"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Telefono"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Telefono"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Direccion"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Direccion"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Clave"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Clave"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Correo"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Correo"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Estado"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Estado"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Usuario"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Usuario"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'BIBLIOTECARIOBindingSource
+        '
+        Me.BIBLIOTECARIOBindingSource.DataMember = "BIBLIOTECARIO"
+        Me.BIBLIOTECARIOBindingSource.DataSource = Me.BD_BIBLIOTECA_V2DataSet
+        '
+        'BD_BIBLIOTECA_V2DataSet
+        '
+        Me.BD_BIBLIOTECA_V2DataSet.DataSetName = "BD_BIBLIOTECA_V2DataSet"
+        Me.BD_BIBLIOTECA_V2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BIBLIOTECARIOTableAdapter
+        '
+        Me.BIBLIOTECARIOTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.BIBLIOTECARIOTableAdapter = Me.BIBLIOTECARIOTableAdapter
+        Me.TableAdapterManager.DETALLETableAdapter = Nothing
+        Me.TableAdapterManager.LECTORTableAdapter = Nothing
+        Me.TableAdapterManager.MATERIAL_BIBLIOGRAFICOTableAdapter = Nothing
+        Me.TableAdapterManager.PRESTACION_Y_DEVOLUCIONTableAdapter = Nothing
+        Me.TableAdapterManager.TIPO_M_BIBLIOGRAFICOTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'frm_bibliotecario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1084, 561)
+        Me.Controls.Add(Me.BIBLIOTECARIODataGridView)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pn_container)
         Me.MaximumSize = New System.Drawing.Size(1100, 600)
@@ -326,25 +555,16 @@ Partial Class frm_bibliotecario
         Me.pn_container.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.BIBLIOTECARIODataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BIBLIOTECARIOBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Private WithEvents pn_container As Panel
-    Private WithEvents btn_limpiar As FontAwesome.Sharp.IconButton
-    Private WithEvents btn_eliminar As FontAwesome.Sharp.IconButton
-    Private WithEvents btn_guardar As FontAwesome.Sharp.IconButton
-    Private WithEvents textBox3 As TextBox
-    Private WithEvents textBox4 As TextBox
-    Private WithEvents textBox5 As TextBox
-    Private WithEvents textBox6 As TextBox
-    Private WithEvents label7 As Label
-    Private WithEvents label9 As Label
-    Private WithEvents label2 As Label
-    Private WithEvents label8 As Label
-    Private WithEvents textBox1 As TextBox
-    Private WithEvents label3 As Label
-    Private WithEvents label4 As Label
     Private WithEvents lb_detusuario As Label
     Private WithEvents Panel1 As Panel
     Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
@@ -354,4 +574,31 @@ Partial Class frm_bibliotecario
     Friend WithEvents btn_descargarexcel As FontAwesome.Sharp.IconButton
     Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
+    Private WithEvents btn_guardarB As FontAwesome.Sharp.IconButton
+    Private WithEvents btn_nuevoB As FontAwesome.Sharp.IconButton
+    Private WithEvents btn_actualizarB As FontAwesome.Sharp.IconButton
+    Private WithEvents btn_eliminarB As FontAwesome.Sharp.IconButton
+    Private WithEvents btn_modificarB As FontAwesome.Sharp.IconButton
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents BD_BIBLIOTECA_V2DataSet As BD_BIBLIOTECA_V2DataSet
+    Friend WithEvents BIBLIOTECARIOBindingSource As BindingSource
+    Friend WithEvents BIBLIOTECARIOTableAdapter As BD_BIBLIOTECA_V2DataSetTableAdapters.BIBLIOTECARIOTableAdapter
+    Friend WithEvents TableAdapterManager As BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager
+    Friend WithEvents CODBIBLITextBox As TextBox
+    Friend WithEvents NombreApellidosTextBox As TextBox
+    Friend WithEvents TelefonoTextBox As TextBox
+    Friend WithEvents DireccionTextBox As TextBox
+    Friend WithEvents ClaveTextBox As TextBox
+    Friend WithEvents CorreoTextBox As TextBox
+    Friend WithEvents EstadoTextBox As TextBox
+    Friend WithEvents UsuarioTextBox As TextBox
+    Friend WithEvents BIBLIOTECARIODataGridView As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
 End Class

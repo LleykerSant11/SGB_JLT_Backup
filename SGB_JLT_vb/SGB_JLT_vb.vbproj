@@ -80,17 +80,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BD_BIBLIOTECA_V2DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BD_BIBLIOTECA_V2DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="conexion.vb" />
     <Compile Include="frm_bibliotecario.Designer.vb">
       <DependentUpon>frm_bibliotecario.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_bibliotecario.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_categorias.Designer.vb">
-      <DependentUpon>frm_categorias.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm_categorias.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_inicio.Designer.vb">
@@ -150,9 +149,6 @@
     <EmbeddedResource Include="frm_bibliotecario.resx">
       <DependentUpon>frm_bibliotecario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_categorias.resx">
-      <DependentUpon>frm_categorias.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_inicio.resx">
       <DependentUpon>frm_inicio.vb</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +175,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="BD_BIBLIOTECA_V2DataSet.xsc">
+      <DependentUpon>BD_BIBLIOTECA_V2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BD_BIBLIOTECA_V2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BD_BIBLIOTECA_V2DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BD_BIBLIOTECA_V2DataSet.xss">
+      <DependentUpon>BD_BIBLIOTECA_V2DataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

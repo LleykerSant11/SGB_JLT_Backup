@@ -34,7 +34,7 @@
         For Each frmHijo As Form In Me.MdiChildren
             frmHijo.Dispose()
         Next
-        Dim frmCategoria As New frm_categorias()
+        Dim frmCategoria As New frm_inventario()
         frmCategoria.MdiParent = Me
         frmCategoria.WindowState = FormWindowState.Maximized
         frmCategoria.Show()

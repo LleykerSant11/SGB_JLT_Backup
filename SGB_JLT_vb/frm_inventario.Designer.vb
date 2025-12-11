@@ -23,20 +23,6 @@ Partial Class frm_inventario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pn_container = New System.Windows.Forms.Panel()
-        Me.btn_limpiar = New FontAwesome.Sharp.IconButton()
-        Me.btn_eliminar = New FontAwesome.Sharp.IconButton()
-        Me.btn_guardar = New FontAwesome.Sharp.IconButton()
-        Me.textBox3 = New System.Windows.Forms.TextBox()
-        Me.textBox4 = New System.Windows.Forms.TextBox()
-        Me.textBox5 = New System.Windows.Forms.TextBox()
-        Me.textBox6 = New System.Windows.Forms.TextBox()
-        Me.label7 = New System.Windows.Forms.Label()
-        Me.label9 = New System.Windows.Forms.Label()
-        Me.label2 = New System.Windows.Forms.Label()
-        Me.label8 = New System.Windows.Forms.Label()
-        Me.textBox1 = New System.Windows.Forms.TextBox()
-        Me.label3 = New System.Windows.Forms.Label()
-        Me.label4 = New System.Windows.Forms.Label()
         Me.lb_detusuario = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.IconButton2 = New FontAwesome.Sharp.IconButton()
@@ -46,6 +32,12 @@ Partial Class frm_inventario
         Me.btn_descargarexcel = New FontAwesome.Sharp.IconButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btn_guardar = New FontAwesome.Sharp.IconButton()
+        Me.btn_nuevo = New FontAwesome.Sharp.IconButton()
+        Me.btn_actualizar = New FontAwesome.Sharp.IconButton()
+        Me.btn_eliminar = New FontAwesome.Sharp.IconButton()
+        Me.btn_modificar = New FontAwesome.Sharp.IconButton()
         Me.pn_container.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -53,165 +45,18 @@ Partial Class frm_inventario
         'pn_container
         '
         Me.pn_container.BackColor = System.Drawing.Color.White
-        Me.pn_container.Controls.Add(Me.btn_limpiar)
-        Me.pn_container.Controls.Add(Me.btn_eliminar)
         Me.pn_container.Controls.Add(Me.btn_guardar)
-        Me.pn_container.Controls.Add(Me.textBox3)
-        Me.pn_container.Controls.Add(Me.textBox4)
-        Me.pn_container.Controls.Add(Me.textBox5)
-        Me.pn_container.Controls.Add(Me.textBox6)
-        Me.pn_container.Controls.Add(Me.label7)
-        Me.pn_container.Controls.Add(Me.label9)
-        Me.pn_container.Controls.Add(Me.label2)
-        Me.pn_container.Controls.Add(Me.label8)
-        Me.pn_container.Controls.Add(Me.textBox1)
-        Me.pn_container.Controls.Add(Me.label3)
-        Me.pn_container.Controls.Add(Me.label4)
+        Me.pn_container.Controls.Add(Me.btn_nuevo)
+        Me.pn_container.Controls.Add(Me.btn_actualizar)
+        Me.pn_container.Controls.Add(Me.btn_eliminar)
+        Me.pn_container.Controls.Add(Me.btn_modificar)
+        Me.pn_container.Controls.Add(Me.GroupBox1)
         Me.pn_container.Controls.Add(Me.lb_detusuario)
         Me.pn_container.Dock = System.Windows.Forms.DockStyle.Left
         Me.pn_container.Location = New System.Drawing.Point(0, 0)
         Me.pn_container.Name = "pn_container"
-        Me.pn_container.Size = New System.Drawing.Size(216, 495)
+        Me.pn_container.Size = New System.Drawing.Size(216, 548)
         Me.pn_container.TabIndex = 8
-        '
-        'btn_limpiar
-        '
-        Me.btn_limpiar.BackColor = System.Drawing.Color.SteelBlue
-        Me.btn_limpiar.ForeColor = System.Drawing.Color.White
-        Me.btn_limpiar.IconChar = FontAwesome.Sharp.IconChar.Broom
-        Me.btn_limpiar.IconColor = System.Drawing.Color.White
-        Me.btn_limpiar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_limpiar.IconSize = 25
-        Me.btn_limpiar.Location = New System.Drawing.Point(28, 371)
-        Me.btn_limpiar.Name = "btn_limpiar"
-        Me.btn_limpiar.Size = New System.Drawing.Size(163, 35)
-        Me.btn_limpiar.TabIndex = 26
-        Me.btn_limpiar.Text = "Limpiar"
-        Me.btn_limpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_limpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_limpiar.UseVisualStyleBackColor = False
-        '
-        'btn_eliminar
-        '
-        Me.btn_eliminar.BackColor = System.Drawing.Color.Red
-        Me.btn_eliminar.ForeColor = System.Drawing.Color.White
-        Me.btn_eliminar.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
-        Me.btn_eliminar.IconColor = System.Drawing.Color.White
-        Me.btn_eliminar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_eliminar.IconSize = 25
-        Me.btn_eliminar.Location = New System.Drawing.Point(27, 412)
-        Me.btn_eliminar.Name = "btn_eliminar"
-        Me.btn_eliminar.Size = New System.Drawing.Size(163, 35)
-        Me.btn_eliminar.TabIndex = 25
-        Me.btn_eliminar.Text = "eliminar"
-        Me.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_eliminar.UseVisualStyleBackColor = False
-        '
-        'btn_guardar
-        '
-        Me.btn_guardar.BackColor = System.Drawing.Color.DarkGreen
-        Me.btn_guardar.ForeColor = System.Drawing.Color.White
-        Me.btn_guardar.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
-        Me.btn_guardar.IconColor = System.Drawing.Color.White
-        Me.btn_guardar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_guardar.IconSize = 25
-        Me.btn_guardar.Location = New System.Drawing.Point(27, 330)
-        Me.btn_guardar.Name = "btn_guardar"
-        Me.btn_guardar.Size = New System.Drawing.Size(163, 35)
-        Me.btn_guardar.TabIndex = 24
-        Me.btn_guardar.Text = "Guardar"
-        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_guardar.UseVisualStyleBackColor = False
-        '
-        'textBox3
-        '
-        Me.textBox3.Location = New System.Drawing.Point(28, 228)
-        Me.textBox3.Name = "textBox3"
-        Me.textBox3.Size = New System.Drawing.Size(163, 20)
-        Me.textBox3.TabIndex = 12
-        '
-        'textBox4
-        '
-        Me.textBox4.Location = New System.Drawing.Point(28, 189)
-        Me.textBox4.Name = "textBox4"
-        Me.textBox4.Size = New System.Drawing.Size(163, 20)
-        Me.textBox4.TabIndex = 13
-        '
-        'textBox5
-        '
-        Me.textBox5.Location = New System.Drawing.Point(28, 150)
-        Me.textBox5.Name = "textBox5"
-        Me.textBox5.Size = New System.Drawing.Size(163, 20)
-        Me.textBox5.TabIndex = 14
-        '
-        'textBox6
-        '
-        Me.textBox6.Location = New System.Drawing.Point(28, 111)
-        Me.textBox6.Name = "textBox6"
-        Me.textBox6.Size = New System.Drawing.Size(163, 20)
-        Me.textBox6.TabIndex = 15
-        '
-        'label7
-        '
-        Me.label7.AutoSize = True
-        Me.label7.Location = New System.Drawing.Point(25, 251)
-        Me.label7.Name = "label7"
-        Me.label7.Size = New System.Drawing.Size(0, 13)
-        Me.label7.TabIndex = 14
-        '
-        'label9
-        '
-        Me.label9.AutoSize = True
-        Me.label9.Location = New System.Drawing.Point(25, 212)
-        Me.label9.Name = "label9"
-        Me.label9.Size = New System.Drawing.Size(111, 13)
-        Me.label9.TabIndex = 16
-        Me.label9.Text = "Confirmar Contraseña:"
-        '
-        'label2
-        '
-        Me.label2.AutoSize = True
-        Me.label2.Location = New System.Drawing.Point(25, 56)
-        Me.label2.Name = "label2"
-        Me.label2.Size = New System.Drawing.Size(85, 13)
-        Me.label2.TabIndex = 10
-        Me.label2.Text = "Nro Documento:"
-        '
-        'label8
-        '
-        Me.label8.AutoSize = True
-        Me.label8.Location = New System.Drawing.Point(24, 173)
-        Me.label8.Name = "label8"
-        Me.label8.Size = New System.Drawing.Size(64, 13)
-        Me.label8.TabIndex = 15
-        Me.label8.Text = "Contraseña:"
-        '
-        'textBox1
-        '
-        Me.textBox1.Location = New System.Drawing.Point(27, 72)
-        Me.textBox1.Name = "textBox1"
-        Me.textBox1.Size = New System.Drawing.Size(164, 20)
-        Me.textBox1.TabIndex = 10
-        '
-        'label3
-        '
-        Me.label3.AutoSize = True
-        Me.label3.Location = New System.Drawing.Point(25, 134)
-        Me.label3.Name = "label3"
-        Me.label3.Size = New System.Drawing.Size(41, 13)
-        Me.label3.TabIndex = 11
-        Me.label3.Text = "Correo:"
-        '
-        'label4
-        '
-        Me.label4.AutoSize = True
-        Me.label4.Location = New System.Drawing.Point(25, 95)
-        Me.label4.Name = "label4"
-        Me.label4.Size = New System.Drawing.Size(94, 13)
-        Me.label4.TabIndex = 12
-        Me.label4.Text = "Nombre Completo:"
         '
         'lb_detusuario
         '
@@ -311,12 +156,106 @@ Partial Class frm_inventario
         Me.Label6.TabIndex = 0
         Me.Label6.Text = "Listado de M.Bibliografico:"
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Location = New System.Drawing.Point(11, 34)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(200, 280)
+        Me.GroupBox1.TabIndex = 40
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Datos:"
+        '
+        'btn_guardar
+        '
+        Me.btn_guardar.BackColor = System.Drawing.Color.DarkGreen
+        Me.btn_guardar.ForeColor = System.Drawing.Color.White
+        Me.btn_guardar.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
+        Me.btn_guardar.IconColor = System.Drawing.Color.White
+        Me.btn_guardar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_guardar.IconSize = 25
+        Me.btn_guardar.Location = New System.Drawing.Point(24, 371)
+        Me.btn_guardar.Name = "btn_guardar"
+        Me.btn_guardar.Size = New System.Drawing.Size(163, 35)
+        Me.btn_guardar.TabIndex = 45
+        Me.btn_guardar.Text = "Guardar"
+        Me.btn_guardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_guardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_guardar.UseVisualStyleBackColor = False
+        '
+        'btn_nuevo
+        '
+        Me.btn_nuevo.BackColor = System.Drawing.Color.Teal
+        Me.btn_nuevo.ForeColor = System.Drawing.Color.White
+        Me.btn_nuevo.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
+        Me.btn_nuevo.IconColor = System.Drawing.Color.White
+        Me.btn_nuevo.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_nuevo.IconSize = 25
+        Me.btn_nuevo.Location = New System.Drawing.Point(23, 333)
+        Me.btn_nuevo.Name = "btn_nuevo"
+        Me.btn_nuevo.Size = New System.Drawing.Size(163, 35)
+        Me.btn_nuevo.TabIndex = 44
+        Me.btn_nuevo.Text = "Nuevo"
+        Me.btn_nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_nuevo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_nuevo.UseVisualStyleBackColor = False
+        '
+        'btn_actualizar
+        '
+        Me.btn_actualizar.BackColor = System.Drawing.Color.SteelBlue
+        Me.btn_actualizar.ForeColor = System.Drawing.Color.White
+        Me.btn_actualizar.IconChar = FontAwesome.Sharp.IconChar.Broom
+        Me.btn_actualizar.IconColor = System.Drawing.Color.White
+        Me.btn_actualizar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_actualizar.IconSize = 25
+        Me.btn_actualizar.Location = New System.Drawing.Point(24, 453)
+        Me.btn_actualizar.Name = "btn_actualizar"
+        Me.btn_actualizar.Size = New System.Drawing.Size(163, 35)
+        Me.btn_actualizar.TabIndex = 43
+        Me.btn_actualizar.Text = "Actualizar"
+        Me.btn_actualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_actualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_actualizar.UseVisualStyleBackColor = False
+        '
+        'btn_eliminar
+        '
+        Me.btn_eliminar.BackColor = System.Drawing.Color.Red
+        Me.btn_eliminar.ForeColor = System.Drawing.Color.White
+        Me.btn_eliminar.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
+        Me.btn_eliminar.IconColor = System.Drawing.Color.White
+        Me.btn_eliminar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_eliminar.IconSize = 25
+        Me.btn_eliminar.Location = New System.Drawing.Point(23, 494)
+        Me.btn_eliminar.Name = "btn_eliminar"
+        Me.btn_eliminar.Size = New System.Drawing.Size(163, 35)
+        Me.btn_eliminar.TabIndex = 42
+        Me.btn_eliminar.Text = "eliminar"
+        Me.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_eliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_eliminar.UseVisualStyleBackColor = False
+        '
+        'btn_modificar
+        '
+        Me.btn_modificar.BackColor = System.Drawing.Color.DarkGreen
+        Me.btn_modificar.ForeColor = System.Drawing.Color.White
+        Me.btn_modificar.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
+        Me.btn_modificar.IconColor = System.Drawing.Color.White
+        Me.btn_modificar.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.btn_modificar.IconSize = 25
+        Me.btn_modificar.Location = New System.Drawing.Point(23, 412)
+        Me.btn_modificar.Name = "btn_modificar"
+        Me.btn_modificar.Size = New System.Drawing.Size(163, 35)
+        Me.btn_modificar.TabIndex = 41
+        Me.btn_modificar.Text = "Modificar"
+        Me.btn_modificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_modificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_modificar.UseVisualStyleBackColor = False
+        '
         'frm_inventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1081, 495)
+        Me.ClientSize = New System.Drawing.Size(1081, 548)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pn_container)
         Me.Name = "frm_inventario"
@@ -330,20 +269,6 @@ Partial Class frm_inventario
     End Sub
 
     Private WithEvents pn_container As Panel
-    Private WithEvents btn_limpiar As FontAwesome.Sharp.IconButton
-    Private WithEvents btn_eliminar As FontAwesome.Sharp.IconButton
-    Private WithEvents btn_guardar As FontAwesome.Sharp.IconButton
-    Private WithEvents textBox3 As TextBox
-    Private WithEvents textBox4 As TextBox
-    Private WithEvents textBox5 As TextBox
-    Private WithEvents textBox6 As TextBox
-    Private WithEvents label7 As Label
-    Private WithEvents label9 As Label
-    Private WithEvents label2 As Label
-    Private WithEvents label8 As Label
-    Private WithEvents textBox1 As TextBox
-    Private WithEvents label3 As Label
-    Private WithEvents label4 As Label
     Private WithEvents lb_detusuario As Label
     Private WithEvents Panel1 As Panel
     Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
@@ -353,4 +278,10 @@ Partial Class frm_inventario
     Friend WithEvents btn_descargarexcel As FontAwesome.Sharp.IconButton
     Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Private WithEvents btn_guardar As FontAwesome.Sharp.IconButton
+    Private WithEvents btn_nuevo As FontAwesome.Sharp.IconButton
+    Private WithEvents btn_actualizar As FontAwesome.Sharp.IconButton
+    Private WithEvents btn_eliminar As FontAwesome.Sharp.IconButton
+    Private WithEvents btn_modificar As FontAwesome.Sharp.IconButton
 End Class

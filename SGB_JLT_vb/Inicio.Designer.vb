@@ -45,7 +45,7 @@ Partial Class Inicio
         Me.menu_titulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.menu_titulo.Location = New System.Drawing.Point(0, 0)
         Me.menu_titulo.Name = "menu_titulo"
-        Me.menu_titulo.Size = New System.Drawing.Size(1084, 56)
+        Me.menu_titulo.Size = New System.Drawing.Size(1134, 56)
         Me.menu_titulo.TabIndex = 7
         Me.menu_titulo.Text = "menuStrip2"
         '
@@ -68,7 +68,7 @@ Partial Class Inicio
         Me.menu.Location = New System.Drawing.Point(0, 56)
         Me.menu.Name = "menu"
         Me.menu.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.menu.Size = New System.Drawing.Size(1084, 73)
+        Me.menu.Size = New System.Drawing.Size(1134, 73)
         Me.menu.TabIndex = 13
         Me.menu.Text = "menuStrip1"
         '
@@ -193,12 +193,12 @@ Partial Class Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1084, 661)
+        Me.ClientSize = New System.Drawing.Size(1134, 761)
         Me.Controls.Add(Me.menu)
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.menu_titulo)
         Me.IsMdiContainer = True
-        Me.MaximumSize = New System.Drawing.Size(1110, 700)
+        Me.MaximumSize = New System.Drawing.Size(1150, 800)
         Me.Name = "Inicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"

@@ -27,7 +27,7 @@ Partial Class Login
         Me.btn_ver = New FontAwesome.Sharp.IconButton()
         Me.btn_salir = New FontAwesome.Sharp.IconButton()
         Me.btn_ingresar = New FontAwesome.Sharp.IconButton()
-        Me.txt_contraseña = New System.Windows.Forms.TextBox()
+        Me.txt_clave = New System.Windows.Forms.TextBox()
         Me.txt_usuario = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -44,7 +44,7 @@ Partial Class Login
         Me.Panel1.Controls.Add(Me.btn_ver)
         Me.Panel1.Controls.Add(Me.btn_salir)
         Me.Panel1.Controls.Add(Me.btn_ingresar)
-        Me.Panel1.Controls.Add(Me.txt_contraseña)
+        Me.Panel1.Controls.Add(Me.txt_clave)
         Me.Panel1.Controls.Add(Me.txt_usuario)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Label3)
@@ -116,12 +116,12 @@ Partial Class Login
         Me.btn_ingresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btn_ingresar.UseVisualStyleBackColor = False
         '
-        'txt_contraseña
+        'txt_clave
         '
-        Me.txt_contraseña.Location = New System.Drawing.Point(53, 329)
-        Me.txt_contraseña.Name = "txt_contraseña"
-        Me.txt_contraseña.Size = New System.Drawing.Size(246, 20)
-        Me.txt_contraseña.TabIndex = 5
+        Me.txt_clave.Location = New System.Drawing.Point(53, 329)
+        Me.txt_clave.Name = "txt_clave"
+        Me.txt_clave.Size = New System.Drawing.Size(246, 20)
+        Me.txt_clave.TabIndex = 5
         '
         'txt_usuario
         '
@@ -197,6 +197,6 @@ Partial Class Login
     Friend WithEvents btn_ver As FontAwesome.Sharp.IconButton
     Friend WithEvents btn_salir As FontAwesome.Sharp.IconButton
     Friend WithEvents btn_ingresar As FontAwesome.Sharp.IconButton
-    Friend WithEvents txt_contraseña As TextBox
+    Friend WithEvents txt_clave As TextBox
     Friend WithEvents txt_usuario As TextBox
 End Class
