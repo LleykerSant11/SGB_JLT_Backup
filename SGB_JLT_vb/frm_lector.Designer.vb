@@ -33,6 +33,8 @@ Partial Class frm_lector
         Me.pn_container = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.CodLecTextBox = New System.Windows.Forms.TextBox()
+        Me.LECTORBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BD_BIBLIOTECA_V2DataSet = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSet()
         Me.TipoLectorComboBox = New System.Windows.Forms.ComboBox()
         Me.NombreApellidosTextBox = New System.Windows.Forms.TextBox()
         Me.TelefonoTextBox = New System.Windows.Forms.TextBox()
@@ -58,8 +60,6 @@ Partial Class frm_lector
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LECTORBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.BD_BIBLIOTECA_V2DataSet = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSet()
         Me.LECTORTableAdapter = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.LECTORTableAdapter()
         Me.TableAdapterManager = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager()
         CodLecLabel = New System.Windows.Forms.Label()
@@ -71,10 +71,10 @@ Partial Class frm_lector
         CorreoLabel = New System.Windows.Forms.Label()
         Me.pn_container.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        CType(Me.LECTORDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LECTORBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        CType(Me.LECTORDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'CodLecLabel
@@ -151,6 +151,7 @@ Partial Class frm_lector
         Me.pn_container.Controls.Add(Me.btn_modificarL)
         Me.pn_container.Controls.Add(Me.lb_detusuario)
         Me.pn_container.Dock = System.Windows.Forms.DockStyle.Left
+        Me.pn_container.Enabled = False
         Me.pn_container.Location = New System.Drawing.Point(0, 0)
         Me.pn_container.Name = "pn_container"
         Me.pn_container.Size = New System.Drawing.Size(290, 561)
@@ -187,6 +188,16 @@ Partial Class frm_lector
         Me.CodLecTextBox.Name = "CodLecTextBox"
         Me.CodLecTextBox.Size = New System.Drawing.Size(121, 20)
         Me.CodLecTextBox.TabIndex = 1
+        '
+        'LECTORBindingSource
+        '
+        Me.LECTORBindingSource.DataMember = "LECTOR"
+        Me.LECTORBindingSource.DataSource = Me.BD_BIBLIOTECA_V2DataSet
+        '
+        'BD_BIBLIOTECA_V2DataSet
+        '
+        Me.BD_BIBLIOTECA_V2DataSet.DataSetName = "BD_BIBLIOTECA_V2DataSet"
+        Me.BD_BIBLIOTECA_V2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TipoLectorComboBox
         '
@@ -397,7 +408,6 @@ Partial Class frm_lector
         Me.LECTORDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.LECTORDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.LECTORDataGridView.DataSource = Me.LECTORBindingSource
-        Me.LECTORDataGridView.Enabled = False
         Me.LECTORDataGridView.Location = New System.Drawing.Point(303, 147)
         Me.LECTORDataGridView.Name = "LECTORDataGridView"
         Me.LECTORDataGridView.Size = New System.Drawing.Size(737, 220)
@@ -445,16 +455,6 @@ Partial Class frm_lector
         Me.DataGridViewTextBoxColumn7.HeaderText = "Correo"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
-        'LECTORBindingSource
-        '
-        Me.LECTORBindingSource.DataMember = "LECTOR"
-        Me.LECTORBindingSource.DataSource = Me.BD_BIBLIOTECA_V2DataSet
-        '
-        'BD_BIBLIOTECA_V2DataSet
-        '
-        Me.BD_BIBLIOTECA_V2DataSet.DataSetName = "BD_BIBLIOTECA_V2DataSet"
-        Me.BD_BIBLIOTECA_V2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'LECTORTableAdapter
         '
         Me.LECTORTableAdapter.ClearBeforeFill = True
@@ -486,11 +486,11 @@ Partial Class frm_lector
         Me.pn_container.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.LECTORBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.LECTORDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.LECTORBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
