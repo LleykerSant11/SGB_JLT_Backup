@@ -101,6 +101,12 @@
     <Compile Include="frm_inicio.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_prestadevol.Designer.vb">
+      <DependentUpon>frm_prestadevol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_prestadevol.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_tipomb.Designer.vb">
       <DependentUpon>frm_tipomb.vb</DependentUpon>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_inicio.resx">
       <DependentUpon>frm_inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_prestadevol.resx">
+      <DependentUpon>frm_prestadevol.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_tipomb.resx">
       <DependentUpon>frm_tipomb.vb</DependentUpon>
