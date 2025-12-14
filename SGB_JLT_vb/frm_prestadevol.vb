@@ -160,6 +160,8 @@ Public Class frm_prestadevol
                 ' ------------------------------------------
 
                 Me.PRESTACION_Y_DEVOLUCIONTableAdapter.Fill(Me.BD_BIBLIOTECA_V2DataSet.PRESTACION_Y_DEVOLUCION)
+                ' ESTA LÍNEA RECARGA EL DETALLE FILTRADO CON LOS DATOS NUEVOS
+                Me.DETALLETableAdapter.FillBy(Me.BD_BIBLIOTECA_V2DataSet.DETALLE, NumeroRegistroTextBox.Text)
 
 
                 btn_nuevoPD.Enabled = True

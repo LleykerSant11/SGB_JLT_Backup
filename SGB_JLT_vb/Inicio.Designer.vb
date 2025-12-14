@@ -198,7 +198,7 @@ Partial Class Inicio
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.menu_titulo)
         Me.IsMdiContainer = True
-        Me.MaximumSize = New System.Drawing.Size(1150, 800)
+        Me.MaximumSize = New System.Drawing.Size(1150, 1000)
         Me.Name = "Inicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"

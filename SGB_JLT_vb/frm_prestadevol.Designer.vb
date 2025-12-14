@@ -766,7 +766,7 @@ Partial Class frm_prestadevol
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.DataSource = Me.PRESTACION_Y_DEVOLUCIONBindingSource
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.Location = New System.Drawing.Point(583, 369)
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.Name = "PRESTACION_Y_DEVOLUCIONDataGridView"
-        Me.PRESTACION_Y_DEVOLUCIONDataGridView.Size = New System.Drawing.Size(544, 220)
+        Me.PRESTACION_Y_DEVOLUCIONDataGridView.Size = New System.Drawing.Size(545, 220)
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.TabIndex = 50
         '
         'DataGridViewTextBoxColumn16

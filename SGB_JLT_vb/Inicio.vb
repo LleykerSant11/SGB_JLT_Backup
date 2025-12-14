@@ -50,4 +50,14 @@
         frmmtbibliografico.WindowState = FormWindowState.Maximized
         frmmtbibliografico.Show()
     End Sub
+
+    Private Sub sm_prestacion_Click(sender As Object, e As EventArgs) Handles sm_prestacion.Click
+        For Each frmHijo As Form In Me.MdiChildren
+            frmHijo.Dispose()
+        Next
+        Dim frmmtprestadev As New frm_prestadevol()
+        frmmtprestadev.MdiParent = Me
+        frmmtprestadev.WindowState = FormWindowState.Maximized
+        frmmtprestadev.Show()
+    End Sub
 End Class
