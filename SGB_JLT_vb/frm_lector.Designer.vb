@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_lector
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frm_lector
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim CodLecLabel As System.Windows.Forms.Label
@@ -47,11 +47,6 @@ Partial Class frm_lector
         Me.btn_eliminarL = New FontAwesome.Sharp.IconButton()
         Me.btn_modificarL = New FontAwesome.Sharp.IconButton()
         Me.lb_detusuario = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
-        Me.txt_buscal = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.LECTORDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -73,7 +68,6 @@ Partial Class frm_lector
         Me.GroupBox1.SuspendLayout()
         CType(Me.LECTORBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         CType(Me.LECTORDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -154,7 +148,7 @@ Partial Class frm_lector
         Me.pn_container.Enabled = False
         Me.pn_container.Location = New System.Drawing.Point(0, 0)
         Me.pn_container.Name = "pn_container"
-        Me.pn_container.Size = New System.Drawing.Size(290, 561)
+        Me.pn_container.Size = New System.Drawing.Size(290, 607)
         Me.pn_container.TabIndex = 8
         '
         'GroupBox1
@@ -274,7 +268,7 @@ Partial Class frm_lector
         '
         'btn_nuevoL
         '
-        Me.btn_nuevoL.BackColor = System.Drawing.Color.Teal
+        Me.btn_nuevoL.BackColor = System.Drawing.Color.Indigo
         Me.btn_nuevoL.ForeColor = System.Drawing.Color.White
         Me.btn_nuevoL.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
         Me.btn_nuevoL.IconColor = System.Drawing.Color.White
@@ -325,7 +319,7 @@ Partial Class frm_lector
         '
         'btn_modificarL
         '
-        Me.btn_modificarL.BackColor = System.Drawing.Color.DarkGreen
+        Me.btn_modificarL.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btn_modificarL.ForeColor = System.Drawing.Color.White
         Me.btn_modificarL.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
         Me.btn_modificarL.IconColor = System.Drawing.Color.White
@@ -350,67 +344,15 @@ Partial Class frm_lector
         Me.lb_detusuario.TabIndex = 0
         Me.lb_detusuario.Text = "Detalle de Lector:"
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.IconButton2)
-        Me.Panel1.Controls.Add(Me.IconButton1)
-        Me.Panel1.Controls.Add(Me.txt_buscal)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(303, 45)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(737, 66)
-        Me.Panel1.TabIndex = 18
-        '
-        'IconButton2
-        '
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Broom
-        Me.IconButton2.IconColor = System.Drawing.Color.Black
-        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton2.IconSize = 20
-        Me.IconButton2.Location = New System.Drawing.Point(763, 23)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Size = New System.Drawing.Size(29, 23)
-        Me.IconButton2.TabIndex = 17
-        Me.IconButton2.UseVisualStyleBackColor = True
-        '
-        'IconButton1
-        '
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Search
-        Me.IconButton1.IconColor = System.Drawing.Color.Black
-        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.IconSize = 20
-        Me.IconButton1.Location = New System.Drawing.Point(728, 23)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(29, 23)
-        Me.IconButton1.TabIndex = 16
-        Me.IconButton1.UseVisualStyleBackColor = True
-        '
-        'txt_buscal
-        '
-        Me.txt_buscal.Location = New System.Drawing.Point(127, 25)
-        Me.txt_buscal.Name = "txt_buscal"
-        Me.txt_buscal.Size = New System.Drawing.Size(288, 20)
-        Me.txt_buscal.TabIndex = 14
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(17, 28)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(104, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Busacr por Nombre: "
-        '
         'LECTORDataGridView
         '
         Me.LECTORDataGridView.AutoGenerateColumns = False
         Me.LECTORDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.LECTORDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.LECTORDataGridView.DataSource = Me.LECTORBindingSource
-        Me.LECTORDataGridView.Location = New System.Drawing.Point(303, 147)
+        Me.LECTORDataGridView.Location = New System.Drawing.Point(374, 170)
         Me.LECTORDataGridView.Name = "LECTORDataGridView"
-        Me.LECTORDataGridView.Size = New System.Drawing.Size(737, 220)
+        Me.LECTORDataGridView.Size = New System.Drawing.Size(737, 379)
         Me.LECTORDataGridView.TabIndex = 18
         '
         'DataGridViewTextBoxColumn1
@@ -467,6 +409,7 @@ Partial Class frm_lector
         Me.TableAdapterManager.LECTORTableAdapter = Me.LECTORTableAdapter
         Me.TableAdapterManager.MATERIAL_BIBLIOGRAFICOTableAdapter = Nothing
         Me.TableAdapterManager.PRESTACION_Y_DEVOLUCIONTableAdapter = Nothing
+        Me.TableAdapterManager.TEMPORALTableAdapter = Nothing
         Me.TableAdapterManager.TIPO_M_BIBLIOGRAFICOTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
@@ -475,11 +418,10 @@ Partial Class frm_lector
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1088, 561)
+        Me.ClientSize = New System.Drawing.Size(1234, 607)
         Me.Controls.Add(Me.LECTORDataGridView)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pn_container)
-        Me.MaximumSize = New System.Drawing.Size(1200, 1600)
+        Me.MaximumSize = New System.Drawing.Size(1250, 646)
         Me.Name = "frm_lector"
         Me.Text = "frm_lector"
         Me.pn_container.ResumeLayout(False)
@@ -488,8 +430,6 @@ Partial Class frm_lector
         Me.GroupBox1.PerformLayout()
         CType(Me.LECTORBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         CType(Me.LECTORDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -497,11 +437,6 @@ Partial Class frm_lector
 
     Private WithEvents pn_container As Panel
     Private WithEvents lb_detusuario As Label
-    Private WithEvents Panel1 As Panel
-    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
-    Friend WithEvents txt_buscal As TextBox
-    Friend WithEvents Label1 As Label
     Private WithEvents btn_guardarL As FontAwesome.Sharp.IconButton
     Private WithEvents btn_nuevoL As FontAwesome.Sharp.IconButton
     Private WithEvents btn_actualizarL As FontAwesome.Sharp.IconButton

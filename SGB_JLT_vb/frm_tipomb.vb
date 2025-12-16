@@ -1,5 +1,7 @@
-﻿Public Class frm_tipomb
-    Private buscatmb As DataView
+﻿Imports System.Data.SqlClient
+Public Class frm_tipomb
+
+
     Private Sub lb_detusuario_Click(sender As Object, e As EventArgs) Handles lb_detusuario.Click
 
     End Sub
@@ -14,8 +16,7 @@
     Private Sub frm_tipomb_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'BD_BIBLIOTECA_V2DataSet.TIPO_M_BIBLIOGRAFICO' table. You can move, or remove it, as needed.
         Me.TIPO_M_BIBLIOGRAFICOTableAdapter.Fill(Me.BD_BIBLIOTECA_V2DataSet.TIPO_M_BIBLIOGRAFICO)
-        buscatmb = Me.BD_BIBLIOTECA_V2DataSet.TIPO_M_BIBLIOGRAFICO.DefaultView
-        TIPO_M_BIBLIOGRAFICODataGridView.DataSource = buscatmb
+
 
     End Sub
 
@@ -119,7 +120,8 @@
         SiglasTextBox.Clear()
     End Sub
 
-    Private Sub txt_buscatmb_TextChanged(sender As Object, e As EventArgs) Handles txt_buscatmb.TextChanged
-        buscatmb.RowFilter = String.Format("Descripcion LIKE '*{0}*'", txt_buscatmb.Text)
+
+    Private Sub txt_buscaTMBI_TextChanged(sender As Object, e As EventArgs)
+
     End Sub
 End Class

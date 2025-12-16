@@ -36,6 +36,7 @@ Partial Class Inicio
         Me.menu_lectores = New FontAwesome.Sharp.IconMenuItem()
         Me.menureportes = New FontAwesome.Sharp.IconMenuItem()
         Me.menuacercade = New FontAwesome.Sharp.IconMenuItem()
+        Me.DetalleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.menu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,7 +46,7 @@ Partial Class Inicio
         Me.menu_titulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(36, Byte), Integer))
         Me.menu_titulo.Location = New System.Drawing.Point(0, 0)
         Me.menu_titulo.Name = "menu_titulo"
-        Me.menu_titulo.Size = New System.Drawing.Size(1134, 56)
+        Me.menu_titulo.Size = New System.Drawing.Size(1234, 56)
         Me.menu_titulo.TabIndex = 7
         Me.menu_titulo.Text = "menuStrip2"
         '
@@ -68,7 +69,7 @@ Partial Class Inicio
         Me.menu.Location = New System.Drawing.Point(0, 56)
         Me.menu.Name = "menu"
         Me.menu.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.menu.Size = New System.Drawing.Size(1134, 73)
+        Me.menu.Size = New System.Drawing.Size(1234, 73)
         Me.menu.TabIndex = 13
         Me.menu.Text = "menuStrip1"
         '
@@ -101,7 +102,7 @@ Partial Class Inicio
         'menu_transaciones
         '
         Me.menu_transaciones.AutoSize = False
-        Me.menu_transaciones.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.sm_prestacion, Me.sm_devolucion})
+        Me.menu_transaciones.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.sm_prestacion, Me.sm_devolucion, Me.DetalleToolStripMenuItem})
         Me.menu_transaciones.IconChar = FontAwesome.Sharp.IconChar.ScrewdriverWrench
         Me.menu_transaciones.IconColor = System.Drawing.Color.Black
         Me.menu_transaciones.IconFont = FontAwesome.Sharp.IconFont.[Auto]
@@ -115,13 +116,13 @@ Partial Class Inicio
         'sm_prestacion
         '
         Me.sm_prestacion.Name = "sm_prestacion"
-        Me.sm_prestacion.Size = New System.Drawing.Size(152, 22)
+        Me.sm_prestacion.Size = New System.Drawing.Size(134, 22)
         Me.sm_prestacion.Text = "Prestacion"
         '
         'sm_devolucion
         '
         Me.sm_devolucion.Name = "sm_devolucion"
-        Me.sm_devolucion.Size = New System.Drawing.Size(152, 22)
+        Me.sm_devolucion.Size = New System.Drawing.Size(134, 22)
         Me.sm_devolucion.Text = "Devolucion"
         '
         'menu_inventario
@@ -189,16 +190,24 @@ Partial Class Inicio
         Me.menuacercade.Text = "Acerca de"
         Me.menuacercade.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'DetalleToolStripMenuItem
+        '
+        Me.DetalleToolStripMenuItem.Name = "DetalleToolStripMenuItem"
+        Me.DetalleToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DetalleToolStripMenuItem.Text = "Detalle"
+        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1134, 761)
+        Me.ClientSize = New System.Drawing.Size(1234, 761)
         Me.Controls.Add(Me.menu)
         Me.Controls.Add(Me.label1)
         Me.Controls.Add(Me.menu_titulo)
         Me.IsMdiContainer = True
-        Me.MaximumSize = New System.Drawing.Size(1150, 1000)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(1250, 800)
+        Me.MinimizeBox = False
         Me.Name = "Inicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inicio"
@@ -223,4 +232,5 @@ Partial Class Inicio
     Friend WithEvents sm_devolucion As ToolStripMenuItem
     Friend WithEvents smenu_categorias As ToolStripMenuItem
     Friend WithEvents smenu_matbibliografico As ToolStripMenuItem
+    Friend WithEvents DetalleToolStripMenuItem As ToolStripMenuItem
 End Class

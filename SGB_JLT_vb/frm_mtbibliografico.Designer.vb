@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_mtbibliografico
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frm_mtbibliografico
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim TipoMBLabel As System.Windows.Forms.Label
@@ -32,14 +32,6 @@ Partial Class frm_mtbibliografico
         Dim EstadoLabel As System.Windows.Forms.Label
         Dim AutorLabel As System.Windows.Forms.Label
         Dim EjemplaresLabel As System.Windows.Forms.Label
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
-        Me.txt_buscat = New System.Windows.Forms.TextBox()
-        Me.btn_descargarexcel = New FontAwesome.Sharp.IconButton()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.pn_container = New System.Windows.Forms.Panel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TipoMBTextBox = New System.Windows.Forms.TextBox()
@@ -80,7 +72,6 @@ Partial Class frm_mtbibliografico
         EstadoLabel = New System.Windows.Forms.Label()
         AutorLabel = New System.Windows.Forms.Label()
         EjemplaresLabel = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
         Me.pn_container.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.MATERIAL_BIBLIOGRAFICOBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -169,94 +160,6 @@ Partial Class frm_mtbibliografico
         EjemplaresLabel.TabIndex = 16
         EjemplaresLabel.Text = "Ejemplares:"
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.IconButton2)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
-        Me.Panel1.Controls.Add(Me.IconButton1)
-        Me.Panel1.Controls.Add(Me.txt_buscat)
-        Me.Panel1.Controls.Add(Me.btn_descargarexcel)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Location = New System.Drawing.Point(279, 12)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(843, 66)
-        Me.Panel1.TabIndex = 20
-        '
-        'IconButton2
-        '
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Broom
-        Me.IconButton2.IconColor = System.Drawing.Color.Black
-        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton2.IconSize = 20
-        Me.IconButton2.Location = New System.Drawing.Point(763, 23)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Size = New System.Drawing.Size(29, 23)
-        Me.IconButton2.TabIndex = 17
-        Me.IconButton2.UseVisualStyleBackColor = True
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(307, 23)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 14
-        '
-        'IconButton1
-        '
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Search
-        Me.IconButton1.IconColor = System.Drawing.Color.Black
-        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.IconSize = 20
-        Me.IconButton1.Location = New System.Drawing.Point(728, 23)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(29, 23)
-        Me.IconButton1.TabIndex = 16
-        Me.IconButton1.UseVisualStyleBackColor = True
-        '
-        'txt_buscat
-        '
-        Me.txt_buscat.Location = New System.Drawing.Point(434, 23)
-        Me.txt_buscat.Name = "txt_buscat"
-        Me.txt_buscat.Size = New System.Drawing.Size(288, 20)
-        Me.txt_buscat.TabIndex = 14
-        '
-        'btn_descargarexcel
-        '
-        Me.btn_descargarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel
-        Me.btn_descargarexcel.IconColor = System.Drawing.Color.Green
-        Me.btn_descargarexcel.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_descargarexcel.IconSize = 20
-        Me.btn_descargarexcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_descargarexcel.Location = New System.Drawing.Point(7, 26)
-        Me.btn_descargarexcel.Name = "btn_descargarexcel"
-        Me.btn_descargarexcel.Size = New System.Drawing.Size(130, 28)
-        Me.btn_descargarexcel.TabIndex = 14
-        Me.btn_descargarexcel.Text = "Descargar Excel"
-        Me.btn_descargarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_descargarexcel.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(234, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Busacr por: "
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(3, 3)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(245, 19)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Listado de M.Bibliografico:"
-        '
         'pn_container
         '
         Me.pn_container.BackColor = System.Drawing.Color.White
@@ -270,7 +173,7 @@ Partial Class frm_mtbibliografico
         Me.pn_container.Dock = System.Windows.Forms.DockStyle.Left
         Me.pn_container.Location = New System.Drawing.Point(0, 0)
         Me.pn_container.Name = "pn_container"
-        Me.pn_container.Size = New System.Drawing.Size(273, 561)
+        Me.pn_container.Size = New System.Drawing.Size(273, 607)
         Me.pn_container.TabIndex = 21
         '
         'GroupBox1
@@ -411,7 +314,7 @@ Partial Class frm_mtbibliografico
         '
         'btn_nuevoMB
         '
-        Me.btn_nuevoMB.BackColor = System.Drawing.Color.Teal
+        Me.btn_nuevoMB.BackColor = System.Drawing.Color.Indigo
         Me.btn_nuevoMB.ForeColor = System.Drawing.Color.White
         Me.btn_nuevoMB.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
         Me.btn_nuevoMB.IconColor = System.Drawing.Color.White
@@ -463,7 +366,7 @@ Partial Class frm_mtbibliografico
         '
         'btn_modificarMB
         '
-        Me.btn_modificarMB.BackColor = System.Drawing.Color.DarkGreen
+        Me.btn_modificarMB.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btn_modificarMB.ForeColor = System.Drawing.Color.White
         Me.btn_modificarMB.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
         Me.btn_modificarMB.IconColor = System.Drawing.Color.White
@@ -500,6 +403,7 @@ Partial Class frm_mtbibliografico
         Me.TableAdapterManager.LECTORTableAdapter = Nothing
         Me.TableAdapterManager.MATERIAL_BIBLIOGRAFICOTableAdapter = Me.MATERIAL_BIBLIOGRAFICOTableAdapter
         Me.TableAdapterManager.PRESTACION_Y_DEVOLUCIONTableAdapter = Nothing
+        Me.TableAdapterManager.TEMPORALTableAdapter = Nothing
         Me.TableAdapterManager.TIPO_M_BIBLIOGRAFICOTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
@@ -509,9 +413,9 @@ Partial Class frm_mtbibliografico
         Me.MATERIAL_BIBLIOGRAFICODataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.MATERIAL_BIBLIOGRAFICODataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9})
         Me.MATERIAL_BIBLIOGRAFICODataGridView.DataSource = Me.MATERIAL_BIBLIOGRAFICOBindingSource
-        Me.MATERIAL_BIBLIOGRAFICODataGridView.Location = New System.Drawing.Point(286, 100)
+        Me.MATERIAL_BIBLIOGRAFICODataGridView.Location = New System.Drawing.Point(279, 137)
         Me.MATERIAL_BIBLIOGRAFICODataGridView.Name = "MATERIAL_BIBLIOGRAFICODataGridView"
-        Me.MATERIAL_BIBLIOGRAFICODataGridView.Size = New System.Drawing.Size(836, 220)
+        Me.MATERIAL_BIBLIOGRAFICODataGridView.Size = New System.Drawing.Size(934, 413)
         Me.MATERIAL_BIBLIOGRAFICODataGridView.TabIndex = 21
         '
         'DataGridViewTextBoxColumn2
@@ -574,15 +478,12 @@ Partial Class frm_mtbibliografico
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1134, 561)
+        Me.ClientSize = New System.Drawing.Size(1234, 607)
         Me.Controls.Add(Me.MATERIAL_BIBLIOGRAFICODataGridView)
         Me.Controls.Add(Me.pn_container)
-        Me.Controls.Add(Me.Panel1)
-        Me.MaximumSize = New System.Drawing.Size(1150, 600)
+        Me.MaximumSize = New System.Drawing.Size(1250, 646)
         Me.Name = "frm_mtbibliografico"
         Me.Text = "frm_mtbibliografico"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.pn_container.ResumeLayout(False)
         Me.pn_container.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
@@ -593,15 +494,6 @@ Partial Class frm_mtbibliografico
         Me.ResumeLayout(False)
 
     End Sub
-
-    Private WithEvents Panel1 As Panel
-    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
-    Friend WithEvents txt_buscat As TextBox
-    Friend WithEvents btn_descargarexcel As FontAwesome.Sharp.IconButton
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label6 As Label
     Private WithEvents pn_container As Panel
     Private WithEvents lb_detusuario As Label
     Private WithEvents btn_guardarMB As FontAwesome.Sharp.IconButton

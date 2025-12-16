@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_tipomb
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frm_tipomb
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim TipoMBLabel As System.Windows.Forms.Label
@@ -39,9 +39,6 @@ Partial Class frm_tipomb
         Me.DescripcionTextBox = New System.Windows.Forms.TextBox()
         Me.SiglasTextBox = New System.Windows.Forms.TextBox()
         Me.lb_detusuario = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.txt_buscatmb = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.TIPO_M_BIBLIOGRAFICOTableAdapter = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TIPO_M_BIBLIOGRAFICOTableAdapter()
         Me.TableAdapterManager = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager()
         Me.TIPO_M_BIBLIOGRAFICODataGridView = New System.Windows.Forms.DataGridView()
@@ -55,7 +52,6 @@ Partial Class frm_tipomb
         Me.GroupBox1.SuspendLayout()
         CType(Me.TIPO_M_BIBLIOGRAFICOBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         CType(Me.TIPO_M_BIBLIOGRAFICODataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -99,7 +95,7 @@ Partial Class frm_tipomb
         Me.pn_container.Dock = System.Windows.Forms.DockStyle.Left
         Me.pn_container.Location = New System.Drawing.Point(0, 0)
         Me.pn_container.Name = "pn_container"
-        Me.pn_container.Size = New System.Drawing.Size(230, 548)
+        Me.pn_container.Size = New System.Drawing.Size(230, 607)
         Me.pn_container.TabIndex = 8
         '
         'btn_guardarTMB
@@ -111,7 +107,7 @@ Partial Class frm_tipomb
         Me.btn_guardarTMB.IconColor = System.Drawing.Color.White
         Me.btn_guardarTMB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_guardarTMB.IconSize = 25
-        Me.btn_guardarTMB.Location = New System.Drawing.Point(24, 371)
+        Me.btn_guardarTMB.Location = New System.Drawing.Point(32, 301)
         Me.btn_guardarTMB.Name = "btn_guardarTMB"
         Me.btn_guardarTMB.Size = New System.Drawing.Size(163, 35)
         Me.btn_guardarTMB.TabIndex = 45
@@ -122,13 +118,13 @@ Partial Class frm_tipomb
         '
         'btn_nuevoTMB
         '
-        Me.btn_nuevoTMB.BackColor = System.Drawing.Color.Teal
+        Me.btn_nuevoTMB.BackColor = System.Drawing.Color.Indigo
         Me.btn_nuevoTMB.ForeColor = System.Drawing.Color.White
         Me.btn_nuevoTMB.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
         Me.btn_nuevoTMB.IconColor = System.Drawing.Color.White
         Me.btn_nuevoTMB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_nuevoTMB.IconSize = 25
-        Me.btn_nuevoTMB.Location = New System.Drawing.Point(23, 333)
+        Me.btn_nuevoTMB.Location = New System.Drawing.Point(31, 263)
         Me.btn_nuevoTMB.Name = "btn_nuevoTMB"
         Me.btn_nuevoTMB.Size = New System.Drawing.Size(163, 35)
         Me.btn_nuevoTMB.TabIndex = 44
@@ -146,7 +142,7 @@ Partial Class frm_tipomb
         Me.btn_actualizarTMB.IconColor = System.Drawing.Color.White
         Me.btn_actualizarTMB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_actualizarTMB.IconSize = 25
-        Me.btn_actualizarTMB.Location = New System.Drawing.Point(24, 453)
+        Me.btn_actualizarTMB.Location = New System.Drawing.Point(32, 383)
         Me.btn_actualizarTMB.Name = "btn_actualizarTMB"
         Me.btn_actualizarTMB.Size = New System.Drawing.Size(163, 35)
         Me.btn_actualizarTMB.TabIndex = 43
@@ -163,7 +159,7 @@ Partial Class frm_tipomb
         Me.btn_eliminarTMB.IconColor = System.Drawing.Color.White
         Me.btn_eliminarTMB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_eliminarTMB.IconSize = 25
-        Me.btn_eliminarTMB.Location = New System.Drawing.Point(23, 494)
+        Me.btn_eliminarTMB.Location = New System.Drawing.Point(31, 424)
         Me.btn_eliminarTMB.Name = "btn_eliminarTMB"
         Me.btn_eliminarTMB.Size = New System.Drawing.Size(163, 35)
         Me.btn_eliminarTMB.TabIndex = 42
@@ -174,13 +170,13 @@ Partial Class frm_tipomb
         '
         'btn_modificarTMB
         '
-        Me.btn_modificarTMB.BackColor = System.Drawing.Color.DarkGreen
+        Me.btn_modificarTMB.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btn_modificarTMB.ForeColor = System.Drawing.Color.White
         Me.btn_modificarTMB.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
         Me.btn_modificarTMB.IconColor = System.Drawing.Color.White
         Me.btn_modificarTMB.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_modificarTMB.IconSize = 25
-        Me.btn_modificarTMB.Location = New System.Drawing.Point(23, 412)
+        Me.btn_modificarTMB.Location = New System.Drawing.Point(31, 342)
         Me.btn_modificarTMB.Name = "btn_modificarTMB"
         Me.btn_modificarTMB.Size = New System.Drawing.Size(163, 35)
         Me.btn_modificarTMB.TabIndex = 41
@@ -199,7 +195,7 @@ Partial Class frm_tipomb
         Me.GroupBox1.Controls.Add(Me.SiglasTextBox)
         Me.GroupBox1.Location = New System.Drawing.Point(11, 34)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(219, 280)
+        Me.GroupBox1.Size = New System.Drawing.Size(219, 164)
         Me.GroupBox1.TabIndex = 40
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos:"
@@ -251,32 +247,6 @@ Partial Class frm_tipomb
         Me.lb_detusuario.TabIndex = 0
         Me.lb_detusuario.Text = "Detalle de Bibliotecario:"
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.txt_buscatmb)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(412, 86)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(425, 53)
-        Me.Panel1.TabIndex = 21
-        '
-        'txt_buscatmb
-        '
-        Me.txt_buscatmb.Location = New System.Drawing.Point(130, 23)
-        Me.txt_buscatmb.Name = "txt_buscatmb"
-        Me.txt_buscatmb.Size = New System.Drawing.Size(276, 20)
-        Me.txt_buscatmb.TabIndex = 14
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(3, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(121, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Busacr por descripcion: "
-        '
         'TIPO_M_BIBLIOGRAFICOTableAdapter
         '
         Me.TIPO_M_BIBLIOGRAFICOTableAdapter.ClearBeforeFill = True
@@ -289,6 +259,7 @@ Partial Class frm_tipomb
         Me.TableAdapterManager.LECTORTableAdapter = Nothing
         Me.TableAdapterManager.MATERIAL_BIBLIOGRAFICOTableAdapter = Nothing
         Me.TableAdapterManager.PRESTACION_Y_DEVOLUCIONTableAdapter = Nothing
+        Me.TableAdapterManager.TEMPORALTableAdapter = Nothing
         Me.TableAdapterManager.TIPO_M_BIBLIOGRAFICOTableAdapter = Me.TIPO_M_BIBLIOGRAFICOTableAdapter
         Me.TableAdapterManager.UpdateOrder = SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
@@ -301,18 +272,19 @@ Partial Class frm_tipomb
         Me.TIPO_M_BIBLIOGRAFICODataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.TipoMB, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.TIPO_M_BIBLIOGRAFICODataGridView.DataSource = Me.TIPO_M_BIBLIOGRAFICOBindingSource
         Me.TIPO_M_BIBLIOGRAFICODataGridView.Enabled = False
-        Me.TIPO_M_BIBLIOGRAFICODataGridView.Location = New System.Drawing.Point(412, 174)
+        Me.TIPO_M_BIBLIOGRAFICODataGridView.Location = New System.Drawing.Point(468, 115)
         Me.TIPO_M_BIBLIOGRAFICODataGridView.Name = "TIPO_M_BIBLIOGRAFICODataGridView"
         Me.TIPO_M_BIBLIOGRAFICODataGridView.ReadOnly = True
-        Me.TIPO_M_BIBLIOGRAFICODataGridView.Size = New System.Drawing.Size(425, 220)
+        Me.TIPO_M_BIBLIOGRAFICODataGridView.Size = New System.Drawing.Size(545, 343)
         Me.TIPO_M_BIBLIOGRAFICODataGridView.TabIndex = 21
         '
         'TipoMB
         '
         Me.TipoMB.DataPropertyName = "TipoMB"
-        Me.TipoMB.HeaderText = "TipoMB"
+        Me.TipoMB.HeaderText = "Tipo de Material Bbliografico"
         Me.TipoMB.Name = "TipoMB"
         Me.TipoMB.ReadOnly = True
+        Me.TipoMB.Width = 190
         '
         'DataGridViewTextBoxColumn2
         '
@@ -320,7 +292,7 @@ Partial Class frm_tipomb
         Me.DataGridViewTextBoxColumn2.HeaderText = "Descripcion"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Width = 150
+        Me.DataGridViewTextBoxColumn2.Width = 180
         '
         'DataGridViewTextBoxColumn3
         '
@@ -335,9 +307,8 @@ Partial Class frm_tipomb
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1089, 548)
+        Me.ClientSize = New System.Drawing.Size(1234, 607)
         Me.Controls.Add(Me.TIPO_M_BIBLIOGRAFICODataGridView)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pn_container)
         Me.Name = "frm_tipomb"
         Me.Text = "frm_inventario"
@@ -347,8 +318,6 @@ Partial Class frm_tipomb
         Me.GroupBox1.PerformLayout()
         CType(Me.TIPO_M_BIBLIOGRAFICOBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         CType(Me.TIPO_M_BIBLIOGRAFICODataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -356,9 +325,6 @@ Partial Class frm_tipomb
 
     Private WithEvents pn_container As Panel
     Private WithEvents lb_detusuario As Label
-    Private WithEvents Panel1 As Panel
-    Friend WithEvents txt_buscatmb As TextBox
-    Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Private WithEvents btn_guardarTMB As FontAwesome.Sharp.IconButton
     Private WithEvents btn_nuevoTMB As FontAwesome.Sharp.IconButton

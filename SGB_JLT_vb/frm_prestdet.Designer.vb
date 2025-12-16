@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_prestdet
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frm_prestdet
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.BD_BIBLIOTECA_V2DataSet = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSet()
@@ -81,12 +81,15 @@ Partial Class frm_prestdet
         '
         'DETALLEDataGridView
         '
+        Me.DETALLEDataGridView.AllowUserToAddRows = False
+        Me.DETALLEDataGridView.AllowUserToDeleteRows = False
         Me.DETALLEDataGridView.AutoGenerateColumns = False
         Me.DETALLEDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DETALLEDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.DETALLEDataGridView.DataSource = Me.DETALLEBindingSource
-        Me.DETALLEDataGridView.Location = New System.Drawing.Point(122, 380)
+        Me.DETALLEDataGridView.Location = New System.Drawing.Point(173, 354)
         Me.DETALLEDataGridView.Name = "DETALLEDataGridView"
+        Me.DETALLEDataGridView.ReadOnly = True
         Me.DETALLEDataGridView.Size = New System.Drawing.Size(645, 220)
         Me.DETALLEDataGridView.TabIndex = 0
         '
@@ -95,36 +98,42 @@ Partial Class frm_prestdet
         Me.DataGridViewTextBoxColumn1.DataPropertyName = "NumDetalle"
         Me.DataGridViewTextBoxColumn1.HeaderText = "NumDetalle"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
         '
         'DataGridViewTextBoxColumn2
         '
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "Cantidad"
         Me.DataGridViewTextBoxColumn2.HeaderText = "Cantidad"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
         '
         'DataGridViewTextBoxColumn3
         '
         Me.DataGridViewTextBoxColumn3.DataPropertyName = "EstadoMat"
         Me.DataGridViewTextBoxColumn3.HeaderText = "EstadoMat"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
         '
         'DataGridViewTextBoxColumn4
         '
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "Observaciones"
         Me.DataGridViewTextBoxColumn4.HeaderText = "Observaciones"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
         '
         'DataGridViewTextBoxColumn5
         '
         Me.DataGridViewTextBoxColumn5.DataPropertyName = "MatBib"
         Me.DataGridViewTextBoxColumn5.HeaderText = "MatBib"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
         '
         'DataGridViewTextBoxColumn6
         '
         Me.DataGridViewTextBoxColumn6.DataPropertyName = "NumeroRegistro"
         Me.DataGridViewTextBoxColumn6.HeaderText = "NumeroRegistro"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
         '
         'PRESTACION_Y_DEVOLUCIONBindingSource
         '
@@ -133,13 +142,16 @@ Partial Class frm_prestdet
         '
         'PRESTACION_Y_DEVOLUCIONDataGridView
         '
+        Me.PRESTACION_Y_DEVOLUCIONDataGridView.AllowUserToAddRows = False
+        Me.PRESTACION_Y_DEVOLUCIONDataGridView.AllowUserToDeleteRows = False
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.AutoGenerateColumns = False
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11})
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.DataSource = Me.PRESTACION_Y_DEVOLUCIONBindingSource
-        Me.PRESTACION_Y_DEVOLUCIONDataGridView.Location = New System.Drawing.Point(122, 86)
+        Me.PRESTACION_Y_DEVOLUCIONDataGridView.Location = New System.Drawing.Point(173, 86)
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.Name = "PRESTACION_Y_DEVOLUCIONDataGridView"
-        Me.PRESTACION_Y_DEVOLUCIONDataGridView.Size = New System.Drawing.Size(541, 243)
+        Me.PRESTACION_Y_DEVOLUCIONDataGridView.ReadOnly = True
+        Me.PRESTACION_Y_DEVOLUCIONDataGridView.Size = New System.Drawing.Size(631, 243)
         Me.PRESTACION_Y_DEVOLUCIONDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn7
@@ -147,30 +159,38 @@ Partial Class frm_prestdet
         Me.DataGridViewTextBoxColumn7.DataPropertyName = "NumeroRegistro"
         Me.DataGridViewTextBoxColumn7.HeaderText = "NumeroRegistro"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
         '
         'DataGridViewTextBoxColumn8
         '
         Me.DataGridViewTextBoxColumn8.DataPropertyName = "FechaHoraPrestacion"
         Me.DataGridViewTextBoxColumn8.HeaderText = "FechaHoraPrestacion"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Width = 120
         '
         'DataGridViewTextBoxColumn9
         '
         Me.DataGridViewTextBoxColumn9.DataPropertyName = "FechaHoraDevolucion"
         Me.DataGridViewTextBoxColumn9.HeaderText = "FechaHoraDevolucion"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
+        Me.DataGridViewTextBoxColumn9.Width = 120
         '
         'DataGridViewTextBoxColumn10
         '
         Me.DataGridViewTextBoxColumn10.DataPropertyName = "CodLec"
-        Me.DataGridViewTextBoxColumn10.HeaderText = "CodLec"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "Codigo Lector"
         Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.ReadOnly = True
         '
         'DataGridViewTextBoxColumn11
         '
         Me.DataGridViewTextBoxColumn11.DataPropertyName = "CODBIBLI"
-        Me.DataGridViewTextBoxColumn11.HeaderText = "CODBIBLI"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "Codigo Bibliotecario"
         Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        Me.DataGridViewTextBoxColumn11.ReadOnly = True
+        Me.DataGridViewTextBoxColumn11.Width = 150
         '
         'frm_prestdet
         '

@@ -39,7 +39,7 @@ Partial Class frm_inicio
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(26, 362)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(372, 132)
+        Me.Panel1.Size = New System.Drawing.Size(575, 129)
         Me.Panel1.TabIndex = 2
         '
         'Label1
@@ -48,15 +48,16 @@ Partial Class frm_inicio
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(20, 14)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(118, 18)
+        Me.Label1.Size = New System.Drawing.Size(160, 90)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Desarrolladores:"
+        Me.Label1.Text = "Desarrolladores:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Purizaga Dioses, Piero" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "yacila Mogollon, Josep" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Santos Torres" &
+    ", Lleyker"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(572, 40)
+        Me.Label2.Location = New System.Drawing.Point(687, 50)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(107, 20)
         Me.Label2.TabIndex = 3
@@ -66,7 +67,7 @@ Partial Class frm_inicio
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("ROG Fonts", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(571, 60)
+        Me.Label3.Location = New System.Drawing.Point(686, 70)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(369, 29)
         Me.Label3.TabIndex = 4
@@ -75,9 +76,9 @@ Partial Class frm_inicio
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.SGB_JLT_vb.My.Resources.Resources.img_jlt2
-        Me.PictureBox2.Location = New System.Drawing.Point(3, 40)
+        Me.PictureBox2.Location = New System.Drawing.Point(26, 27)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(462, 236)
+        Me.PictureBox2.Size = New System.Drawing.Size(575, 300)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
@@ -85,7 +86,7 @@ Partial Class frm_inicio
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.SGB_JLT_vb.My.Resources.Resources.img_jlt
-        Me.PictureBox1.Location = New System.Drawing.Point(576, 241)
+        Me.PictureBox1.Location = New System.Drawing.Point(691, 304)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(455, 236)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -97,13 +98,13 @@ Partial Class frm_inicio
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkGray
-        Me.ClientSize = New System.Drawing.Size(1042, 511)
+        Me.ClientSize = New System.Drawing.Size(1234, 607)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.MaximumSize = New System.Drawing.Size(1100, 550)
+        Me.MaximumSize = New System.Drawing.Size(1250, 646)
         Me.Name = "frm_inicio"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frm_inicio"

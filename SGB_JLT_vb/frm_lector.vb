@@ -153,7 +153,7 @@
         EstadoTextBox.Clear()
     End Sub
 
-    Private Sub txt_buscab_TextChanged(sender As Object, e As EventArgs) Handles txt_buscal.TextChanged
+    Private Sub txt_buscab_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 

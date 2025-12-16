@@ -60,4 +60,14 @@
         frmmtprestadev.WindowState = FormWindowState.Maximized
         frmmtprestadev.Show()
     End Sub
+
+    Private Sub DetalleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DetalleToolStripMenuItem.Click
+        For Each frmHijo As Form In Me.MdiChildren
+            frmHijo.Dispose()
+        Next
+        Dim frmmtprestdet As New frm_prestdet()
+        frmmtprestdet.MdiParent = Me
+        frmmtprestdet.WindowState = FormWindowState.Maximized
+        frmmtprestdet.Show()
+    End Sub
 End Class

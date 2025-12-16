@@ -43,12 +43,12 @@ Partial Class frm_bibliotecario
         Me.CorreoTextBox = New System.Windows.Forms.TextBox()
         Me.EstadoTextBox = New System.Windows.Forms.TextBox()
         Me.UsuarioTextBox = New System.Windows.Forms.TextBox()
+        Me.btn_guardarB = New FontAwesome.Sharp.IconButton()
+        Me.btn_nuevoB = New FontAwesome.Sharp.IconButton()
+        Me.btn_actualizarB = New FontAwesome.Sharp.IconButton()
+        Me.btn_eliminarB = New FontAwesome.Sharp.IconButton()
+        Me.btn_modificarB = New FontAwesome.Sharp.IconButton()
         Me.lb_detusuario = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.txt_buscat = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.BIBLIOTECARIODataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -60,14 +60,6 @@ Partial Class frm_bibliotecario
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.BIBLIOTECARIOTableAdapter = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.BIBLIOTECARIOTableAdapter()
         Me.TableAdapterManager = New SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
-        Me.btn_descargarexcel = New FontAwesome.Sharp.IconButton()
-        Me.btn_guardarB = New FontAwesome.Sharp.IconButton()
-        Me.btn_nuevoB = New FontAwesome.Sharp.IconButton()
-        Me.btn_actualizarB = New FontAwesome.Sharp.IconButton()
-        Me.btn_eliminarB = New FontAwesome.Sharp.IconButton()
-        Me.btn_modificarB = New FontAwesome.Sharp.IconButton()
         CODBIBLILabel = New System.Windows.Forms.Label()
         NombreApellidosLabel = New System.Windows.Forms.Label()
         TelefonoLabel = New System.Windows.Forms.Label()
@@ -80,7 +72,6 @@ Partial Class frm_bibliotecario
         Me.GroupBox1.SuspendLayout()
         CType(Me.BIBLIOTECARIOBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
         CType(Me.BIBLIOTECARIODataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -169,7 +160,7 @@ Partial Class frm_bibliotecario
         Me.pn_container.Dock = System.Windows.Forms.DockStyle.Left
         Me.pn_container.Location = New System.Drawing.Point(0, 0)
         Me.pn_container.Name = "pn_container"
-        Me.pn_container.Size = New System.Drawing.Size(252, 561)
+        Me.pn_container.Size = New System.Drawing.Size(252, 607)
         Me.pn_container.TabIndex = 7
         '
         'GroupBox1
@@ -279,178 +270,6 @@ Partial Class frm_bibliotecario
         Me.UsuarioTextBox.Size = New System.Drawing.Size(100, 20)
         Me.UsuarioTextBox.TabIndex = 15
         '
-        'lb_detusuario
-        '
-        Me.lb_detusuario.AutoSize = True
-        Me.lb_detusuario.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lb_detusuario.Location = New System.Drawing.Point(12, 9)
-        Me.lb_detusuario.Name = "lb_detusuario"
-        Me.lb_detusuario.Size = New System.Drawing.Size(206, 22)
-        Me.lb_detusuario.TabIndex = 0
-        Me.lb_detusuario.Text = "Detalle de Bibliotecario:"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.IconButton2)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
-        Me.Panel1.Controls.Add(Me.IconButton1)
-        Me.Panel1.Controls.Add(Me.txt_buscat)
-        Me.Panel1.Controls.Add(Me.btn_descargarexcel)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Location = New System.Drawing.Point(287, 9)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(785, 66)
-        Me.Panel1.TabIndex = 19
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(307, 23)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 14
-        '
-        'txt_buscat
-        '
-        Me.txt_buscat.Location = New System.Drawing.Point(434, 23)
-        Me.txt_buscat.Name = "txt_buscat"
-        Me.txt_buscat.Size = New System.Drawing.Size(288, 20)
-        Me.txt_buscat.TabIndex = 14
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(234, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Busacr por: "
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("MS UI Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(3, 3)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(227, 19)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "Listado de Bibliotecario:"
-        '
-        'BIBLIOTECARIODataGridView
-        '
-        Me.BIBLIOTECARIODataGridView.AutoGenerateColumns = False
-        Me.BIBLIOTECARIODataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BIBLIOTECARIODataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
-        Me.BIBLIOTECARIODataGridView.DataSource = Me.BIBLIOTECARIOBindingSource
-        Me.BIBLIOTECARIODataGridView.Location = New System.Drawing.Point(258, 108)
-        Me.BIBLIOTECARIODataGridView.Name = "BIBLIOTECARIODataGridView"
-        Me.BIBLIOTECARIODataGridView.Size = New System.Drawing.Size(821, 220)
-        Me.BIBLIOTECARIODataGridView.TabIndex = 19
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "CODBIBLI"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "CODBIBLI"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NombreApellidos"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "NombreApellidos"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Telefono"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Telefono"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Direccion"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Direccion"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Clave"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Clave"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Correo"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Correo"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Estado"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Estado"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Usuario"
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Usuario"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'BIBLIOTECARIOTableAdapter
-        '
-        Me.BIBLIOTECARIOTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.BIBLIOTECARIOTableAdapter = Me.BIBLIOTECARIOTableAdapter
-        Me.TableAdapterManager.DETALLETableAdapter = Nothing
-        Me.TableAdapterManager.LECTORTableAdapter = Nothing
-        Me.TableAdapterManager.MATERIAL_BIBLIOGRAFICOTableAdapter = Nothing
-        Me.TableAdapterManager.PRESTACION_Y_DEVOLUCIONTableAdapter = Nothing
-        Me.TableAdapterManager.TIPO_M_BIBLIOGRAFICOTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'IconButton2
-        '
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.Broom
-        Me.IconButton2.IconColor = System.Drawing.Color.Black
-        Me.IconButton2.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton2.IconSize = 20
-        Me.IconButton2.Location = New System.Drawing.Point(763, 23)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Size = New System.Drawing.Size(29, 23)
-        Me.IconButton2.TabIndex = 17
-        Me.IconButton2.UseVisualStyleBackColor = True
-        '
-        'IconButton1
-        '
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.Search
-        Me.IconButton1.IconColor = System.Drawing.Color.Black
-        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.IconSize = 20
-        Me.IconButton1.Location = New System.Drawing.Point(728, 23)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(29, 23)
-        Me.IconButton1.TabIndex = 16
-        Me.IconButton1.UseVisualStyleBackColor = True
-        '
-        'btn_descargarexcel
-        '
-        Me.btn_descargarexcel.IconChar = FontAwesome.Sharp.IconChar.FileExcel
-        Me.btn_descargarexcel.IconColor = System.Drawing.Color.Green
-        Me.btn_descargarexcel.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.btn_descargarexcel.IconSize = 20
-        Me.btn_descargarexcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_descargarexcel.Location = New System.Drawing.Point(7, 26)
-        Me.btn_descargarexcel.Name = "btn_descargarexcel"
-        Me.btn_descargarexcel.Size = New System.Drawing.Size(130, 28)
-        Me.btn_descargarexcel.TabIndex = 14
-        Me.btn_descargarexcel.Text = "Descargar Excel"
-        Me.btn_descargarexcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_descargarexcel.UseVisualStyleBackColor = True
-        '
         'btn_guardarB
         '
         Me.btn_guardarB.BackColor = System.Drawing.Color.DarkGreen
@@ -523,7 +342,7 @@ Partial Class frm_bibliotecario
         '
         'btn_modificarB
         '
-        Me.btn_modificarB.BackColor = System.Drawing.Color.DarkGreen
+        Me.btn_modificarB.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btn_modificarB.ForeColor = System.Drawing.Color.White
         Me.btn_modificarB.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
         Me.btn_modificarB.IconColor = System.Drawing.Color.White
@@ -538,17 +357,101 @@ Partial Class frm_bibliotecario
         Me.btn_modificarB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btn_modificarB.UseVisualStyleBackColor = False
         '
+        'lb_detusuario
+        '
+        Me.lb_detusuario.AutoSize = True
+        Me.lb_detusuario.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lb_detusuario.Location = New System.Drawing.Point(12, 9)
+        Me.lb_detusuario.Name = "lb_detusuario"
+        Me.lb_detusuario.Size = New System.Drawing.Size(206, 22)
+        Me.lb_detusuario.TabIndex = 0
+        Me.lb_detusuario.Text = "Detalle de Bibliotecario:"
+        '
+        'BIBLIOTECARIODataGridView
+        '
+        Me.BIBLIOTECARIODataGridView.AutoGenerateColumns = False
+        Me.BIBLIOTECARIODataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.BIBLIOTECARIODataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
+        Me.BIBLIOTECARIODataGridView.DataSource = Me.BIBLIOTECARIOBindingSource
+        Me.BIBLIOTECARIODataGridView.Location = New System.Drawing.Point(322, 157)
+        Me.BIBLIOTECARIODataGridView.Name = "BIBLIOTECARIODataGridView"
+        Me.BIBLIOTECARIODataGridView.Size = New System.Drawing.Size(821, 350)
+        Me.BIBLIOTECARIODataGridView.TabIndex = 19
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "CODBIBLI"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "CODBIBLI"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NombreApellidos"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "NombreApellidos"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Telefono"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Telefono"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Direccion"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Direccion"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Clave"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Clave"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Correo"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Correo"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Estado"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Estado"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Usuario"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Usuario"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        '
+        'BIBLIOTECARIOTableAdapter
+        '
+        Me.BIBLIOTECARIOTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.BIBLIOTECARIOTableAdapter = Me.BIBLIOTECARIOTableAdapter
+        Me.TableAdapterManager.DETALLETableAdapter = Nothing
+        Me.TableAdapterManager.LECTORTableAdapter = Nothing
+        Me.TableAdapterManager.MATERIAL_BIBLIOGRAFICOTableAdapter = Nothing
+        Me.TableAdapterManager.PRESTACION_Y_DEVOLUCIONTableAdapter = Nothing
+        Me.TableAdapterManager.TEMPORALTableAdapter = Nothing
+        Me.TableAdapterManager.TIPO_M_BIBLIOGRAFICOTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = SGB_JLT_vb.BD_BIBLIOTECA_V2DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
         'frm_bibliotecario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1084, 561)
+        Me.ClientSize = New System.Drawing.Size(1234, 607)
         Me.Controls.Add(Me.BIBLIOTECARIODataGridView)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pn_container)
-        Me.MaximumSize = New System.Drawing.Size(1100, 600)
+        Me.MaximumSize = New System.Drawing.Size(1250, 646)
         Me.Name = "frm_bibliotecario"
         Me.Text = "frm_bibliotecario"
         Me.pn_container.ResumeLayout(False)
@@ -557,8 +460,6 @@ Partial Class frm_bibliotecario
         Me.GroupBox1.PerformLayout()
         CType(Me.BIBLIOTECARIOBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BD_BIBLIOTECA_V2DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         CType(Me.BIBLIOTECARIODataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -566,14 +467,6 @@ Partial Class frm_bibliotecario
 
     Private WithEvents pn_container As Panel
     Private WithEvents lb_detusuario As Label
-    Private WithEvents Panel1 As Panel
-    Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
-    Friend WithEvents txt_buscat As TextBox
-    Friend WithEvents btn_descargarexcel As FontAwesome.Sharp.IconButton
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label6 As Label
     Private WithEvents btn_guardarB As FontAwesome.Sharp.IconButton
     Private WithEvents btn_nuevoB As FontAwesome.Sharp.IconButton
     Private WithEvents btn_actualizarB As FontAwesome.Sharp.IconButton

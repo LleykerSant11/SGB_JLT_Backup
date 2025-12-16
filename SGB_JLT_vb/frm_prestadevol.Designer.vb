@@ -669,7 +669,7 @@ Partial Class frm_prestadevol
         Me.btn_guardarPD.IconColor = System.Drawing.Color.White
         Me.btn_guardarPD.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_guardarPD.IconSize = 25
-        Me.btn_guardarPD.Location = New System.Drawing.Point(938, 143)
+        Me.btn_guardarPD.Location = New System.Drawing.Point(1009, 143)
         Me.btn_guardarPD.Name = "btn_guardarPD"
         Me.btn_guardarPD.Size = New System.Drawing.Size(163, 35)
         Me.btn_guardarPD.TabIndex = 50
@@ -686,7 +686,7 @@ Partial Class frm_prestadevol
         Me.btn_nuevoPD.IconColor = System.Drawing.Color.White
         Me.btn_nuevoPD.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_nuevoPD.IconSize = 25
-        Me.btn_nuevoPD.Location = New System.Drawing.Point(937, 105)
+        Me.btn_nuevoPD.Location = New System.Drawing.Point(1008, 105)
         Me.btn_nuevoPD.Name = "btn_nuevoPD"
         Me.btn_nuevoPD.Size = New System.Drawing.Size(163, 35)
         Me.btn_nuevoPD.TabIndex = 49
@@ -704,7 +704,7 @@ Partial Class frm_prestadevol
         Me.btn_actualizarPD.IconColor = System.Drawing.Color.White
         Me.btn_actualizarPD.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_actualizarPD.IconSize = 25
-        Me.btn_actualizarPD.Location = New System.Drawing.Point(938, 225)
+        Me.btn_actualizarPD.Location = New System.Drawing.Point(1009, 225)
         Me.btn_actualizarPD.Name = "btn_actualizarPD"
         Me.btn_actualizarPD.Size = New System.Drawing.Size(163, 35)
         Me.btn_actualizarPD.TabIndex = 48
@@ -721,7 +721,7 @@ Partial Class frm_prestadevol
         Me.btn_eliminarPD.IconColor = System.Drawing.Color.White
         Me.btn_eliminarPD.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_eliminarPD.IconSize = 25
-        Me.btn_eliminarPD.Location = New System.Drawing.Point(937, 266)
+        Me.btn_eliminarPD.Location = New System.Drawing.Point(1008, 266)
         Me.btn_eliminarPD.Name = "btn_eliminarPD"
         Me.btn_eliminarPD.Size = New System.Drawing.Size(163, 35)
         Me.btn_eliminarPD.TabIndex = 47
@@ -732,13 +732,13 @@ Partial Class frm_prestadevol
         '
         'btn_modificarPD
         '
-        Me.btn_modificarPD.BackColor = System.Drawing.Color.CadetBlue
+        Me.btn_modificarPD.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btn_modificarPD.ForeColor = System.Drawing.Color.White
         Me.btn_modificarPD.IconChar = FontAwesome.Sharp.IconChar.TelegramPlane
         Me.btn_modificarPD.IconColor = System.Drawing.Color.White
         Me.btn_modificarPD.IconFont = FontAwesome.Sharp.IconFont.[Auto]
         Me.btn_modificarPD.IconSize = 25
-        Me.btn_modificarPD.Location = New System.Drawing.Point(937, 184)
+        Me.btn_modificarPD.Location = New System.Drawing.Point(1008, 184)
         Me.btn_modificarPD.Name = "btn_modificarPD"
         Me.btn_modificarPD.Size = New System.Drawing.Size(163, 35)
         Me.btn_modificarPD.TabIndex = 46
@@ -839,7 +839,7 @@ Partial Class frm_prestadevol
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(4, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(36, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1172, 607)
+        Me.ClientSize = New System.Drawing.Size(1234, 607)
         Me.Controls.Add(Me.PRESTACION_Y_DEVOLUCIONDataGridView)
         Me.Controls.Add(Me.btn_guardarPD)
         Me.Controls.Add(Me.btn_nuevoPD)
@@ -858,6 +858,7 @@ Partial Class frm_prestadevol
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LECTORDataGridView)
         Me.Controls.Add(Me.BIBLIOTECARIODataGridView)
+        Me.MaximumSize = New System.Drawing.Size(1250, 646)
         Me.Name = "frm_prestadevol"
         Me.Text = "frm_prestadevol"
         CType(Me.BIBLIOTECARIODataGridView, System.ComponentModel.ISupportInitialize).EndInit()

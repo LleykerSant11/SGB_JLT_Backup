@@ -1,4 +1,6 @@
-﻿Public Class frm_prestdet
+﻿Imports System.Data.SqlClient
+Public Class frm_prestdet
+
     Private Sub DETALLEBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs)
         Me.Validate()
         Me.DETALLEBindingSource.EndEdit()
@@ -12,5 +14,8 @@
         'TODO: This line of code loads data into the 'BD_BIBLIOTECA_V2DataSet.DETALLE' table. You can move, or remove it, as needed.
         Me.DETALLETableAdapter.Fill(Me.BD_BIBLIOTECA_V2DataSet.DETALLE)
 
+
     End Sub
+
+
 End Class
